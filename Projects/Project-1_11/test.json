@@ -1,0 +1,62 @@
+[
+    {
+      "id":1,
+      "date": "March 26, 2023",
+      "fullName": "Dr. Vikram Pudi",
+      "designation": "Head of Data Foundation and Professor, IHub-Data",
+      "introduction": "Vikram Pudi is a Professor of Data Science and Analytics at IIIT Hyderabad. His research interests are primarily in core and applied data analytics -- including algorithms for associative classification, uniqueness mining, interactive classification, and their applications in text, web, education, citation analysis, recommendation systems, bioinformatics and system building.",
+      "about": "He completed his Ph.D in data mining at the Indian Institute of Science, Bangalore in 2003, with a gold medal and worked for a year at  Yahoo! Inc., Bangalore before choosing an academic career at IIIT Hyderabad. He has published extensively at top venues such as ICDM, AAAI, IJCAI, PAKDD and DASFAA. He has also edited 5 proceedings and authored a textbook on data mining.  He has served in the Organizing Committees and Programme Committees for several editions of DASFAA, PAKDD, ICDE, AAAI, NeurIPS and COMAD.",
+      "profileImage":"/static/images/teamImages/1-vikramPudi.jpg",
+      "websiteLink": "https://www.iiit.ac.in/people/faculty/vikram/",
+      "linkedinLink": "https://www.linkedin.com/in/vikram-pudi-52967b68/",
+      "gitHubLink": "",
+      "twitterLink": "",
+      "facebookLink": "",
+      "teamType":"Faculty"
+    },
+    {
+      "id":2,
+      "date": "March 26, 2023",
+      "fullName": "Gundimeda Venugopal",
+      "designation": "Applied Research and Translation Systems Architect and Professor, IHub-Data",
+      "introduction": "Gundimeda Venugopal is a Technology leader who has more than 25 years of diverse IT engineering, enterprise architecture and research experience with Cognizant and TCS. He has a MTech degree in computer science from JNU, New Delhi. He has a track record of delivering complex, engagements in diverse technologies including AI, Machine Learning/Deep Learning, Natural Language Processing, Computer Vision and Enterprise Search. He was part of Cognizant Global Technology Office (GTO) Leadership team and was part of Information Media and Entertainment Vertical and Technology Leadership team. He was the chief architect for Govt of India’s MCA21 e-Governance program. He filed 6 patents (5 granted and 1 pending) and published multiple peer reviewed research publications.  He won two  Cognizant Technology Innovation awards. Gundimeda Venugopal is the architect for the Data Foundation Ecosystem Development.  Data Foundation Core Web site  ( https://datafoundation.iiit.ac.in/ ) is live. It enables researchers to publish and use Indian datasets in Healthcare, Mobility, Infrastructure and other domains (with Indian context).  He was instrumental in setting up a Open source based server and software infrastructure using multiple Ubuntu  servers,  a multi-petabyte object storage ecosystem (that uses MinIO) and Multi-node NVIDIA GPU ecosystem for  Data Foundation. ",
+      "about": "Gundimeda Venugopal along with Prof. Vikram Pudi designed a Hands-on Semester Course “Data Foundation Systems” to assist  Data Foundation Ecosystem  ( Data Foundation Core web site,  Tools and Frameworks ).  First edition of the “Data Foundation Systems” course (Spring 2022) was conducted with 144 students registered contributing to 40+ Data Foundation projects and proof of concepts completed.  A Second edition of  Data Foundation  Systems Course – Spring 2023 (Started from 03 Jan 2023) is underway.   106  Students are taking the course and they are working on 35 projects. He initiated a Learner – Contributor Model to engage IIITH students and External interns (through Srishti Summer Research Internship Program) to develop and support Data Foundation Projects.",
+      "profileImage":"/static/images/teamImages/2-venuGopal.jpg",
+      "websiteLink": "https://in.linkedin.com/in/gundimedavenugopal",
+      "linkedinLink": "https://in.linkedin.com/in/gundimedavenugopal",
+      "gitHubLink": "",
+      "twitterLink": "",
+      "facebookLink": "",
+      "teamType":"Common"
+    },
+    {
+      "id":3,
+      "date": "March 26, 2023",
+      "fullName": "Amit Pandey",
+      "designation": "Senior Developer and Product Manager, IHub-Data",
+      "introduction": "Amit Pandey is a Data Science Researcher working with Prof. Vikram Pudi at the Data Sciences and Analytics Center, KCIS-IIIT Hyderabad. His research interests are broad and encompass Statistical AI, Applied Machine Learning, Natural Language Processing & Understanding, Computer Vision, Multimodal Machine Learning, and Business Intelligence. Being passionate about products, poetry, and teaching, he has demonstrated his ability to work in fast-paced tech environments as a researcher and a product manager.",
+      "about": "Amit Pandey is the Product manager and Senior developer and has played a crucial role in designing and deploying the Datafoundation Ecosystem. He also leads a research team at DSAC and has published at top venues such as COLING and ACM. Amit is currently working on Scholarly Document Processing and Video Understanding. He remains eager to continue exploring new ways to innovate and create impactful solutions.",
+      "profileImage":"/static/images/teamImages/3-amitPandey.jpg",
+      "websiteLink": "https://www.linkedin.com/in/amitpandey2910/",
+      "linkedinLink": "https://www.linkedin.com/in/amitpandey2910/",
+      "gitHubLink": "https://github.com/AmitPandey-Research",
+      "twitterLink": "",
+      "facebookLink": ""
+    },
+    {
+      "id":4,
+      "date": "June 26, 2022",
+      "fullName": "Amey Kudari",
+      "designation": "Senior Developer, IHub-Data",
+      "introduction": "Amey Kudari is an alumni of IIIT-Hyderabad and a software developer who has been with datafoundation project since it began in July 2021. He has played a kay role in the technical aspects of the datafoundation project.",
+      "about": "",
+      "profileImage":"/static/images/teamImages/4-ameyKundry.jpg",
+      "websiteLink": "https://www.linkedin.com/in/amey-kudari-4400361b2/",
+      "linkedinLink": "https://www.linkedin.com/in/amey-kudari-4400361b2/",
+      "gitHubLink": "https://github.com/amey-kudari",
+      "twitterLink": "",
+      "facebookLink": ""
+    }
+  ]
+  
+  
