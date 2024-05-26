@@ -1,0 +1,69 @@
+<!-- app.component.html -->
+
+<div >
+  <div class="audio-section" id="itunes-section">
+    <h2>iTunes</h2>
+    <div class="options">
+      <label>
+        <input type="radio" name="service-option" value="itunes" ng-model="selectedService"> iTunes
+      </label>
+      <label>
+        <input type="radio" name="service-option" value="spotify" ng-model="selectedService"> Spotify
+      </label>
+    </div>
+  </div>
+
+  <div ng-show="selectedService === 'itunes'" class="audio-section" id="itunes-content">
+    <h2>iTunes Options</h2>
+    <div class="options">
+      <label>
+        <input type="radio" name="itunes-option" value="podcast" ng-model="itunesOption"> Podcast
+      </label>
+      <label>
+        <input type="radio" name="itunes-option" value="audiobook" ng-model="itunesOption"> Audiobook
+      </label>
+      <div ng-show="itunesOption === 'podcast'">
+        <form role="form">
+          <label>
+            Podcast Name: <input type="text" class="form-control" ng-model="podCastName">
+          </label>
+        </form>
+      </div>
+      <div ng-show="itunesOption === 'audiobook'">
+        <label>
+          Audiobook ID: <input type="text" ng-model="audiobookId">
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div ng-show="selectedService === 'spotify'" class="audio-section" id="spotify-content">
+    <h2>Spotify Options</h2>
+    <div class="options">
+      <label>
+        <input type="radio" name="spotify-option" value="podcast" ng-model="spotifyOption"> Podcast
+      </label>
+      <label>
+        <input type="radio" name="spotify-option" value="audiobook" ng-model="spotifyOption"> Audiobook
+      </label>
+      <div ng-show="spotifyOption === 'podcast'">
+        <form role="form">
+          <label>
+            Podcast ID: <input type="text" class="form-control" ng-model="podCastName">
+          </label>
+        </form>
+      </div>
+      <div ng-show="spotifyOption === 'audiobook'">
+        <label>
+          Audiobook ID: <input type="text" ng-model="audiobookId">
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <button ng-click="submit()">Search</button>
+  </div>
+
+  <div> {{ audio }}</div>
+</div>

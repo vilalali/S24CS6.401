@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-md-4">
+    <div class="well">
+    <ul class="nav nav-pills nav-stacked">
+      <li><h4>Personal settings</h4></li>
+      <li ng-class="{active: $uiRoute}" ui-route="/settings/account"><a href="#/settings/account">User account</a></li>
+      <li ng-class="{active: $uiRoute}" ui-route="/settings/session"><a href="#/settings/session">Opened sessions</a></li>
+
+      <li ng-show="isAdmin"><h4>General settings</h4></li>
+      <li ng-show="isAdmin" ng-class="{active: $uiRoute}" ui-route="/settings/user.*"><a href="#/settings/user">Users</a></li>
+      <li ng-show="isAdmin" ng-class="{active: $uiRoute}" ui-route="/settings/log"><a href="#/settings/log">Server logs</a></li>
+    </ul>
+    </div>
+  </div>
+
+  <div class="col-md-8">
+    <div class="well">
+      <div ui-view="settings"></div>
+    </div>
+  </div>
+</div>

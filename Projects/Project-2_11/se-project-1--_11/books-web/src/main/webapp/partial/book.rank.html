@@ -1,0 +1,31 @@
+<div ng-controller="BookRank">
+    <h2>Book Ranking</h2>
+    <form>
+      <div class="radio">
+        <label>
+          <input type="radio" ng-model="rankOption" value="averageRating">
+          Ranking Based on Average Rating
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" ng-model="rankOption" value="numberOfRatings">
+          Ranking Based on Number of Ratings Given by User
+        </label>
+      </div>
+      <button type="button" ng-click="rankBooks()">Rank Books</button>
+    </form>
+  
+    <!-- Placeholder for displaying the ranked books -->
+    <div ng-if="rankedBooks.length">
+      <h3>Ranked Books</h3>
+      <ul>
+        <li ng-repeat="book in rankedBooks">
+          {{ book.title }} - Number of Ratings/Avg Rating: {{ book.rankingValue }}
+      </li>
+      </ul>
+    </div>
+    <div ng-if="!rankedBooks.length && rankingInitiated">
+      <p>No books found for the selected ranking option.</p>
+    </div>
+  </div> 

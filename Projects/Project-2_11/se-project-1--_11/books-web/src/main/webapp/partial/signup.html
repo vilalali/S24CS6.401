@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center">
+                    <h3 class="panel-title">Sign Up Form</h3>
+                </div>
+                <div class="panel-body">
+                    <form name="signUpForm" novalidate>
+                        <div class="form-group" ng-class="{ 'has-error': signUpForm.username.$invalid && signUpForm.username.$dirty, 'has-success': signUpForm.username.$valid }">
+                            <label for="username">Username<span class="text-danger">*</span></label>
+                            <input type="text" id="username" name="username" ng-model="user.username" class="form-control" placeholder="Enter user name" required ng-minlength="3" ng-maxlength="50">
+                            <span class="help-block" ng-show="signUpForm.username.$error.required && signUpForm.username.$dirty">Username is required.</span>
+                            <span class="help-block" ng-show="signUpForm.username.$error.minlength && signUpForm.username.$dirty">Username is too short.</span>
+                            <span class="help-block" ng-show="signUpForm.username.$error.maxlength && signUpForm.username.$dirty">Username is too long.</span>
+                        </div>
+                        <div class="form-group" ng-class="{ 'has-error': signUpForm.email.$invalid && signUpForm.email.$dirty, 'has-success': signUpForm.email.$valid }">
+                            <label for="email">E-Mail ID<span class="text-danger">*</span></label>
+                            <input type="email" id="email" name="email" ng-model="user.email" class="form-control" placeholder="Enter valid email ID" required>
+                            <span class="help-block" ng-show="signUpForm.email.$error.required && signUpForm.email.$dirty">E-mail is required.</span>
+                            <span class="help-block" ng-show="signUpForm.email.$error.email && signUpForm.email.$dirty">Must be a valid e-mail.</span>
+                        </div>
+                        <!-- <div class="form-group" ng-class="{ 'has-error': signUpForm.emailConfirm.$invalid && signUpForm.emailConfirm.$dirty, 'has-success': signUpForm.emailConfirm.$valid }">
+                            <label for="emailConfirm">Confirm E-mail</label>
+                            <input type="email" id="emailConfirm" name="emailConfirm" ng-model="user.emailConfirm" class="form-control" required ui-validate="'$value == user.email'" ui-validate-watch="'user.email'">
+                            <span class="help-block" ng-show="signUpForm.emailConfirm.$error.required && signUpForm.emailConfirm.$dirty">Confirm E-mail is required.</span>
+                            <span class="help-block" ng-show="signUpForm.emailConfirm.$error.validator && signUpForm.emailConfirm.$dirty">E-mails do not match.</span>
+                        </div> -->
+                        <div class="form-group" ng-class="{ 'has-error': signUpForm.password.$invalid && signUpForm.password.$dirty, 'has-success': signUpForm.password.$valid }">
+                            <label for="password">Password<span class="text-danger">*</span></label>
+                            <input type="password" id="password" name="password" ng-model="user.password" class="form-control" placeholder="Enter password" required ng-minlength="8">
+                            <span class="help-block" ng-show="signUpForm.password.$error.required && signUpForm.password.$dirty">Password is required.</span>
+                            <span class="help-block" ng-show="signUpForm.password.$error.minlength && signUpForm.password.$dirty">Password is too short.</span>
+                        </div>
+                        <div class="form-group" ng-class="{ 'has-error': signUpForm.passwordConfirm.$invalid && signUpForm.passwordConfirm.$dirty, 'has-success': signUpForm.passwordConfirm.$valid }">
+                            <label for="passwordConfirm">Confirm Password<span class="text-danger">*</span></label>
+                            <input type="password" id="passwordConfirm" name="passwordConfirm" ng-model="user.passwordConfirm" class="form-control" placeholder="Enter confirmed password" required ui-validate="'$value == user.password'" ui-validate-watch="'user.password'">
+                            <span class="help-block" ng-show="signUpForm.passwordConfirm.$error.required && signUpForm.passwordConfirm.$dirty">Confirm Password is required.</span>
+                            <span class="help-block" ng-show="signUpForm.passwordConfirm.$error.validator && signUpForm.passwordConfirm.$dirty">Passwords do not match.</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary col-md-12" ng-click="signup()" ng-disabled="signUpForm.$invalid">Sign Up</button>
+                    </form>
+                    <p style="margin-top: 10px;">
+                      <small>If Already you are a user?</small> 
+                      <a class="primary" href="#/login">Login</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
