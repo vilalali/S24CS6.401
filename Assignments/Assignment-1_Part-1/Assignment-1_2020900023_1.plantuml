@@ -1,0 +1,133 @@
+@startuml Assignment-1_2020900023_1
+skinparam class {
+  BackgroundColor #FFFFFF
+  BorderColor #000000
+  ArrowColor #000000
+  FontColor #000000
+}
+
+title <size:24><b>Smart Vehicle Booking System - Class Diagram By Vilal Ali</b></size>
+
+class User {
+  - userId: String
+  - name: String
+  - email: String
+  - password: String
+  - userType: UserType
+  - wallet: Wallet
+  + createAccount(): void
+  + uploadId(): void
+  + addMoneyToWallet(amount: double): void
+  + viewTripHistory(): void
+}
+
+class Wallet {
+  - balance: double
+  + addMoney(amount: double): void
+  + deductMoney(amount: double): void
+}
+
+enum UserType {
+  Student
+  Staff
+  Teacher
+}
+
+class Vehicle {
+  - vehicleId: String
+  - vehicleType: VehicleType
+  + getVehicleId(): String
+  + getVehicleType(): VehicleType
+}
+
+enum VehicleType {
+  Bike
+  Bicycle
+  Moped
+}
+
+class ParkingLot {
+  - parkingLotId: String
+  - capacity: int
+  - availability: int
+  - location: String
+  - maintenanceStatus: String
+  - securityFeatures: String
+  + getParkingLotId(): String
+  + getCapacity(): int
+  + getAvailability(): int
+  + getLocation(): String
+  + getMaintenanceStatus(): String
+  + getSecurityFeatures(): String
+}
+
+class Trip {
+  - tripId: String
+  - vehicle: Vehicle
+  - user: User
+  - startTime: Date
+  - endTime: Date
+  - distance: double
+  - amountDue: double
+  + startTrip(): void
+  + endTrip(): void
+  + calculateDistance(): void
+  + calculateAmountDue(): void
+}
+
+class Payment {
+  - paymentId: String
+  - user: User
+  - amount: double
+  - paymentMethod: PaymentMethod
+  + makePayment(): void
+}
+
+enum PaymentMethod {
+  InAppWallet
+  UPI
+  SalaryDeduction
+  FeeAddition
+}
+
+class Feedback {
+  - feedbackId: String
+  - user: User
+  - rating: int
+  - comment: String
+  + provideFeedback(): void
+}
+
+User "1" --o "1" Wallet
+User "1" --o "0..*" Trip
+User "1" --o "0..*" Payment
+User "1" --o "1" Feedback
+User "1" --o "0..*" Vehicle
+
+Vehicle "1" --o "0..1" ParkingLot
+Trip "1" --o "1" Vehicle
+Trip "1" --o "1" User
+Payment "1" --o "1" User
+
+class SmartVehicleBookingSystem {
+  - users: List<User>
+  - vehicles: List<Vehicle>
+  - parkingLots: List<ParkingLot>
+  - trips: List<Trip>
+  - payments: List<Payment>
+  - feedbacks: List<Feedback>
+  + registerUser(user: User): void
+  + addVehicle(vehicle: Vehicle): void
+  + addParkingLot(parkingLot: ParkingLot): void
+  + createTrip(user: User, vehicle: Vehicle): void
+  + processPayment(user: User, amount: double, paymentMethod: PaymentMethod): void
+  + addFeedback(feedback: Feedback): void
+}
+SmartVehicleBookingSystem "1" --o "0..*" User
+SmartVehicleBookingSystem "1" --o "0..*" Vehicle
+SmartVehicleBookingSystem "1" --o "0..*" ParkingLot
+SmartVehicleBookingSystem "1" --o "0..*" Trip
+SmartVehicleBookingSystem "1" --o "0..*" Payment
+SmartVehicleBookingSystem "1" --o "0..*" Feedback
+
+@enduml

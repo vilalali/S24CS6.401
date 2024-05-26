@@ -1,0 +1,53 @@
+@startuml Assignment-1_2020900023_4
+title <size:24><b><u>Sequence Diagram for Trip Process</u></b></size>\n
+
+skinparam classFontColor black
+skinparam classFontSize 20
+skinparam classFontName sans-serif
+
+
+participant User #99FF99
+participant SmartVehicleBookingSystem #A9DCDF
+participant Vehicle #ADD1B2
+participant TripManagement #ADD1B2
+participant QRCodeScanner #ADD1B2
+participant ParkingStation #ADD1B2
+participant PenaltyCalculator #E3664A
+
+User -> SmartVehicleBookingSystem : createTrip(user, vehicle)
+activate SmartVehicleBookingSystem
+alt New User
+ SmartVehicleBookingSystem -> User : registerUser(user)
+ activate User
+ User -> SmartVehicleBookingSystem : addMoneyToWallet(amount)
+ deactivate User
+else Existing User
+ alt Staff or Teacher
+ SmartVehicleBookingSystem -> User : deductFromSalary(amount)
+ else Other Users
+ SmartVehicleBookingSystem -> User : deductFromWallet(amount)
+ end
+end
+SmartVehicleBookingSystem -> TripManagement : new TripManagement(user, vehicle)
+activate TripManagement
+User -> QRCodeScanner : scanQRCode(tripId)
+activate QRCodeScanner
+QRCodeScanner -> SmartVehicleBookingSystem : verifyTrip(tripId)
+deactivate QRCodeScanner
+SmartVehicleBookingSystem -> Vehicle : dockAtParkingStation(vehicle)
+activate Vehicle
+Vehicle -> SmartVehicleBookingSystem : notifyDocking()
+deactivate Vehicle
+SmartVehicleBookingSystem -> User : displayEndTripQRCode()
+deactivate SmartVehicleBookingSystem
+TripManagement -> User : startTrip()
+deactivate TripManagement
+alt Vehicle returned within 8 hours
+ else Vehicle not returned within 8 hours
+ User -> PenaltyCalculator : calculatePenalty(days)
+ activate PenaltyCalculator
+ PenaltyCalculator -> User : displayPenaltyCharge(penalty)
+ deactivate PenaltyCalculator
+ end
+footer \n<size:14><b><u>Designed By 2020900023</u></b></size>\n
+@enduml

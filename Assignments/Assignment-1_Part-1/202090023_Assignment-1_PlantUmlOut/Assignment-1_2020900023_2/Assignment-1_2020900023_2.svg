@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1968px" preserveAspectRatio="none" style="width:3127px;height:1968px;background:#FFFFFF;" version="1.1" viewBox="0 0 3127 1968" width="3127px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="152.0156" id="_title" style="stroke:none;stroke-width:1.0;" width="638" x="1237.78" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="5" x="1554.28" y="22.9951"> </text><text fill="#000000" font-family="sans-serif" font-size="24" font-weight="bold" lengthAdjust="spacing" textLength="102" x="1501.78" y="48.5742">Vilal Ali</text><text fill="#000000" font-family="sans-serif" font-size="18" font-weight="bold" lengthAdjust="spacing" textLength="267" x="1420.28" y="70.9424">Roll Number: 2020900023</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="5" x="1554.28" y="88.1826"> </text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="5" x="1554.28" y="104.4795"> </text><text fill="#000000" font-family="sans-serif" font-size="24" font-weight="bold" lengthAdjust="spacing" text-decoration="underline" textLength="628" x="1242.78" y="130.0586">Smart Vehicle Booking System - Class Diagram</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="5" x="1554.28" y="148.7139"> </text><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><g id="elem_User"><rect codeLine="15" fill="#A9DCDF" height="258.8125" id="User" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="448" x="1689" y="1041.0156"/><ellipse cx="1886.25" cy="1057.6563" fill="#A9DCDF" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1886.3594,1053 L1885.2031,1058.0781 L1887.5313,1058.0781 L1886.3594,1053 Z M1884.875,1050.7656 L1887.8594,1050.7656 L1891.2188,1063.1563 L1888.7656,1063.1563 L1888,1060.0938 L1884.7188,1060.0938 L1883.9688,1063.1563 L1881.5313,1063.1563 L1884.875,1050.7656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="20" font-style="italic" lengthAdjust="spacing" textLength="45" x="1906.75" y="1064.5801">User</text><line style="stroke:#000000;stroke-width:0.5;" x1="1690" x2="2136" y1="1074.2969" y2="1074.2969"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1697" y="1088.4375"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="136" x="1709" y="1096.8613">userId: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1697" y="1111.7188"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="131" x="1709" y="1120.1426">name: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1697" y="1135"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="130" x="1709" y="1143.4238">email: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1697" y="1158.2813"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="169" x="1709" y="1166.7051">password: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1697" y="1181.5625"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="138" x="1709" y="1189.9863">wallet: Wallet</text><line style="stroke:#000000;stroke-width:0.5;" x1="1690" x2="2136" y1="1198.7031" y2="1198.7031"/><ellipse cx="1700" cy="1215.8438" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="216" x="1709" y="1221.2676">createAccount(): void</text><ellipse cx="1700" cy="1239.125" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="159" x="1709" y="1244.5488">uploadId(): void</text><ellipse cx="1700" cy="1262.4063" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="422" x="1709" y="1267.8301">addMoneyToWallet(amount: double): void</text><ellipse cx="1700" cy="1285.6875" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="226" x="1709" y="1291.1113">viewTripHistory(): void</text></g><!--MD5=[d6181cb537bdc20c0a3007a98a56832d]
+class Student--><g id="elem_Student"><rect codeLine="27" fill="#FFFFFF" height="119.125" id="Student" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="417" x="800.5" y="1383.5156"/><ellipse cx="964.75" cy="1400.1563" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M967.7188,1405.7969 Q967.1406,1406.0938 966.5,1406.2344 Q965.8594,1406.3906 965.1563,1406.3906 Q962.6563,1406.3906 961.3281,1404.75 Q960.0156,1403.0938 960.0156,1399.9688 Q960.0156,1396.8438 961.3281,1395.1875 Q962.6563,1393.5313 965.1563,1393.5313 Q965.8594,1393.5313 966.5,1393.6875 Q967.1563,1393.8438 967.7188,1394.1406 L967.7188,1396.8594 Q967.0938,1396.2813 966.5,1396.0156 Q965.9063,1395.7344 965.2813,1395.7344 Q963.9375,1395.7344 963.25,1396.8125 Q962.5625,1397.875 962.5625,1399.9688 Q962.5625,1402.0625 963.25,1403.1406 Q963.9375,1404.2031 965.2813,1404.2031 Q965.9063,1404.2031 966.5,1403.9375 Q967.0938,1403.6563 967.7188,1403.0781 L967.7188,1405.7969 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="80" x="985.25" y="1407.0801">Student</text><line style="stroke:#000000;stroke-width:0.5;" x1="801.5" x2="1216.5" y1="1416.7969" y2="1416.7969"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="808.5" y="1430.9375"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="170" x="820.5" y="1439.3613">studentId: String</text><line style="stroke:#000000;stroke-width:0.5;" x1="801.5" x2="1216.5" y1="1448.0781" y2="1448.0781"/><ellipse cx="811.5" cy="1465.2188" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="222" x="820.5" y="1470.6426">getStudentId(): String</text><ellipse cx="811.5" cy="1488.5" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="391" x="820.5" y="1493.9238">getUserDetails(): Map&lt;String, Object&gt;</text></g><!--MD5=[6081a303407aa0c0464c8b50c38f5612]
+class Staff--><g id="elem_Staff"><rect codeLine="33" fill="#FFFFFF" height="119.125" id="Staff" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="417" x="1252.5" y="1383.5156"/><ellipse cx="1433.25" cy="1400.1563" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1436.2188,1405.7969 Q1435.6406,1406.0938 1435,1406.2344 Q1434.3594,1406.3906 1433.6563,1406.3906 Q1431.1563,1406.3906 1429.8281,1404.75 Q1428.5156,1403.0938 1428.5156,1399.9688 Q1428.5156,1396.8438 1429.8281,1395.1875 Q1431.1563,1393.5313 1433.6563,1393.5313 Q1434.3594,1393.5313 1435,1393.6875 Q1435.6563,1393.8438 1436.2188,1394.1406 L1436.2188,1396.8594 Q1435.5938,1396.2813 1435,1396.0156 Q1434.4063,1395.7344 1433.7813,1395.7344 Q1432.4375,1395.7344 1431.75,1396.8125 Q1431.0625,1397.875 1431.0625,1399.9688 Q1431.0625,1402.0625 1431.75,1403.1406 Q1432.4375,1404.2031 1433.7813,1404.2031 Q1434.4063,1404.2031 1435,1403.9375 Q1435.5938,1403.6563 1436.2188,1403.0781 L1436.2188,1405.7969 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="47" x="1453.75" y="1407.0801">Staff</text><line style="stroke:#000000;stroke-width:0.5;" x1="1253.5" x2="1668.5" y1="1416.7969" y2="1416.7969"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1260.5" y="1430.9375"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="137" x="1272.5" y="1439.3613">staffId: String</text><line style="stroke:#000000;stroke-width:0.5;" x1="1253.5" x2="1668.5" y1="1448.0781" y2="1448.0781"/><ellipse cx="1263.5" cy="1465.2188" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="189" x="1272.5" y="1470.6426">getStaffId(): String</text><ellipse cx="1263.5" cy="1488.5" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="391" x="1272.5" y="1493.9238">getUserDetails(): Map&lt;String, Object&gt;</text></g><!--MD5=[61a83f88cb8b7d3a80bc8c481f3736bf]
+class Teacher--><g id="elem_Teacher"><rect codeLine="39" fill="#FFFFFF" height="119.125" id="Teacher" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="417" x="1704.5" y="1383.5156"/><ellipse cx="1868.75" cy="1400.1563" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1871.7188,1405.7969 Q1871.1406,1406.0938 1870.5,1406.2344 Q1869.8594,1406.3906 1869.1563,1406.3906 Q1866.6563,1406.3906 1865.3281,1404.75 Q1864.0156,1403.0938 1864.0156,1399.9688 Q1864.0156,1396.8438 1865.3281,1395.1875 Q1866.6563,1393.5313 1869.1563,1393.5313 Q1869.8594,1393.5313 1870.5,1393.6875 Q1871.1563,1393.8438 1871.7188,1394.1406 L1871.7188,1396.8594 Q1871.0938,1396.2813 1870.5,1396.0156 Q1869.9063,1395.7344 1869.2813,1395.7344 Q1867.9375,1395.7344 1867.25,1396.8125 Q1866.5625,1397.875 1866.5625,1399.9688 Q1866.5625,1402.0625 1867.25,1403.1406 Q1867.9375,1404.2031 1869.2813,1404.2031 Q1869.9063,1404.2031 1870.5,1403.9375 Q1871.0938,1403.6563 1871.7188,1403.0781 L1871.7188,1405.7969 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="80" x="1889.25" y="1407.0801">Teacher</text><line style="stroke:#000000;stroke-width:0.5;" x1="1705.5" x2="2120.5" y1="1416.7969" y2="1416.7969"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1712.5" y="1430.9375"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="169" x="1724.5" y="1439.3613">teacherId: String</text><line style="stroke:#000000;stroke-width:0.5;" x1="1705.5" x2="2120.5" y1="1448.0781" y2="1448.0781"/><ellipse cx="1715.5" cy="1465.2188" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="222" x="1724.5" y="1470.6426">getTeacherId(): String</text><ellipse cx="1715.5" cy="1488.5" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="391" x="1724.5" y="1493.9238">getUserDetails(): Map&lt;String, Object&gt;</text></g><!--MD5=[9f070bf9f108c27faa2eb76515c78fb3]
+class Wallet--><g id="elem_Wallet"><rect codeLine="45" fill="#FFFFFF" height="119.125" id="Wallet" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="392" x="374" y="1383.5156"/><ellipse cx="533.75" cy="1400.1563" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M536.7188,1405.7969 Q536.1406,1406.0938 535.5,1406.2344 Q534.8594,1406.3906 534.1563,1406.3906 Q531.6563,1406.3906 530.3281,1404.75 Q529.0156,1403.0938 529.0156,1399.9688 Q529.0156,1396.8438 530.3281,1395.1875 Q531.6563,1393.5313 534.1563,1393.5313 Q534.8594,1393.5313 535.5,1393.6875 Q536.1563,1393.8438 536.7188,1394.1406 L536.7188,1396.8594 Q536.0938,1396.2813 535.5,1396.0156 Q534.9063,1395.7344 534.2813,1395.7344 Q532.9375,1395.7344 532.25,1396.8125 Q531.5625,1397.875 531.5625,1399.9688 Q531.5625,1402.0625 532.25,1403.1406 Q532.9375,1404.2031 534.2813,1404.2031 Q534.9063,1404.2031 535.5,1403.9375 Q536.0938,1403.6563 536.7188,1403.0781 L536.7188,1405.7969 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="64" x="554.25" y="1407.0801">Wallet</text><line style="stroke:#000000;stroke-width:0.5;" x1="375" x2="765" y1="1416.7969" y2="1416.7969"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="382" y="1430.9375"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="161" x="394" y="1439.3613">balance: double</text><line style="stroke:#000000;stroke-width:0.5;" x1="375" x2="765" y1="1448.0781" y2="1448.0781"/><ellipse cx="385" cy="1465.2188" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="334" x="394" y="1470.6426">addMoney(amount: double): void</text><ellipse cx="385" cy="1488.5" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="366" x="394" y="1493.9238">deductMoney(amount: double): void</text></g><!--MD5=[3aa0d89c6bfdcbf7f32042cedac57549]
+class Vehicle--><g id="elem_Vehicle"><rect codeLine="51" fill="#FFFFFF" height="142.4063" id="Vehicle" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="332" x="7" y="1372.0156"/><ellipse cx="131.75" cy="1388.6563" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M134.7188,1394.2969 Q134.1406,1394.5938 133.5,1394.7344 Q132.8594,1394.8906 132.1563,1394.8906 Q129.6563,1394.8906 128.3281,1393.25 Q127.0156,1391.5938 127.0156,1388.4688 Q127.0156,1385.3438 128.3281,1383.6875 Q129.6563,1382.0313 132.1563,1382.0313 Q132.8594,1382.0313 133.5,1382.1875 Q134.1563,1382.3438 134.7188,1382.6406 L134.7188,1385.3594 Q134.0938,1384.7813 133.5,1384.5156 Q132.9063,1384.2344 132.2813,1384.2344 Q130.9375,1384.2344 130.25,1385.3125 Q129.5625,1386.375 129.5625,1388.4688 Q129.5625,1390.5625 130.25,1391.6406 Q130.9375,1392.7031 132.2813,1392.7031 Q132.9063,1392.7031 133.5,1392.4375 Q134.0938,1392.1563 134.7188,1391.5781 L134.7188,1394.2969 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="74" x="152.25" y="1395.5801">Vehicle</text><line style="stroke:#000000;stroke-width:0.5;" x1="8" x2="338" y1="1405.2969" y2="1405.2969"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="1419.4375"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="164" x="27" y="1427.8613">vehicleId: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="1442.7188"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="254" x="27" y="1451.1426">vehicleType: VehicleType</text><line style="stroke:#000000;stroke-width:0.5;" x1="8" x2="338" y1="1459.8594" y2="1459.8594"/><ellipse cx="18" cy="1477" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="216" x="27" y="1482.4238">getVehicleId(): String</text><ellipse cx="18" cy="1500.2813" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="306" x="27" y="1505.7051">getVehicleType(): VehicleType</text></g><g id="elem_GMN11"><path d="M225.5,1120.0156 L225.5,1220.8125 A0,0 0 0 0 225.5,1220.8125 L359.26,1220.8125 L233.45,1371.8356 L367.26,1220.8125 L586.5,1220.8125 A0,0 0 0 0 586.5,1220.8125 L586.5,1130.0156 L576.5,1120.0156 L225.5,1120.0156 A0,0 0 0 0 225.5,1120.0156 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M576.5,1120.0156 L576.5,1130.0156 L586.5,1130.0156 L576.5,1120.0156 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="153" x="231.5" y="1137.0825">Within the Vehicle class,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="313" x="231.5" y="1152.2153">there is an instance variable named VehicleType,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="259" x="231.5" y="1167.3481">and it should be of the type VehicleType.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="328" x="231.5" y="1182.481">The actual implementation of the VehicleType class</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="296" x="231.5" y="1197.6138">would contain details about the properties and</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="340" x="231.5" y="1212.7466">methods associated with representing a vehicle type.</text></g><!--MD5=[8836a49f4083a7550430b1f83332c96a]
+class ParkingLot--><g id="elem_ParkingLot"><rect codeLine="60" fill="#FFFFFF" height="328.6563" id="ParkingLot" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="342" x="1355" y="1586.0156"/><ellipse cx="1468.25" cy="1602.6563" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1471.2188,1608.2969 Q1470.6406,1608.5938 1470,1608.7344 Q1469.3594,1608.8906 1468.6563,1608.8906 Q1466.1563,1608.8906 1464.8281,1607.25 Q1463.5156,1605.5938 1463.5156,1602.4688 Q1463.5156,1599.3438 1464.8281,1597.6875 Q1466.1563,1596.0313 1468.6563,1596.0313 Q1469.3594,1596.0313 1470,1596.1875 Q1470.6563,1596.3438 1471.2188,1596.6406 L1471.2188,1599.3594 Q1470.5938,1598.7813 1470,1598.5156 Q1469.4063,1598.2344 1468.7813,1598.2344 Q1467.4375,1598.2344 1466.75,1599.3125 Q1466.0625,1600.375 1466.0625,1602.4688 Q1466.0625,1604.5625 1466.75,1605.6406 Q1467.4375,1606.7031 1468.7813,1606.7031 Q1469.4063,1606.7031 1470,1606.4375 Q1470.5938,1606.1563 1471.2188,1605.5781 L1471.2188,1608.2969 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="107" x="1488.75" y="1609.5801">ParkingLot</text><line style="stroke:#000000;stroke-width:0.5;" x1="1356" x2="1696" y1="1619.2969" y2="1619.2969"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1363" y="1633.4375"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="201" x="1375" y="1641.8613">parkingLotId: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1363" y="1656.7188"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="124" x="1375" y="1665.1426">capacity: int</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1363" y="1680"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="149" x="1375" y="1688.4238">availability: int</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1363" y="1703.2813"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="154" x="1375" y="1711.7051">location: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1363" y="1726.5625"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="270" x="1375" y="1734.9863">maintenanceStatus: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1363" y="1749.8438"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="240" x="1375" y="1758.2676">securityFeatures: String</text><line style="stroke:#000000;stroke-width:0.5;" x1="1356" x2="1696" y1="1766.9844" y2="1766.9844"/><ellipse cx="1366" cy="1784.125" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="249" x="1375" y="1789.5488">getParkingLotId(): String</text><ellipse cx="1366" cy="1807.4063" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="176" x="1375" y="1812.8301">getCapacity(): int</text><ellipse cx="1366" cy="1830.6875" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="200" x="1375" y="1836.1113">getAvailability(): int</text><ellipse cx="1366" cy="1853.9688" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="208" x="1375" y="1859.3926">getLocation(): String</text><ellipse cx="1366" cy="1877.25" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="316" x="1375" y="1882.6738">getMaintenanceStatus(): String</text><ellipse cx="1366" cy="1900.5313" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="292" x="1375" y="1905.9551">getSecurityFeatures(): String</text></g><!--MD5=[2ca012cb9a33ef313ac92a1a111f40e0]
+class TripManagement--><g id="elem_TripManagement"><rect codeLine="75" fill="#FFFFFF" height="421.7813" id="TripManagement" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="324" x="1751" y="559.0156"/><ellipse cx="1823.25" cy="575.6563" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1826.2188,581.2969 Q1825.6406,581.5938 1825,581.7344 Q1824.3594,581.8906 1823.6563,581.8906 Q1821.1563,581.8906 1819.8281,580.25 Q1818.5156,578.5938 1818.5156,575.4688 Q1818.5156,572.3438 1819.8281,570.6875 Q1821.1563,569.0313 1823.6563,569.0313 Q1824.3594,569.0313 1825,569.1875 Q1825.6563,569.3438 1826.2188,569.6406 L1826.2188,572.3594 Q1825.5938,571.7813 1825,571.5156 Q1824.4063,571.2344 1823.7813,571.2344 Q1822.4375,571.2344 1821.75,572.3125 Q1821.0625,573.375 1821.0625,575.4688 Q1821.0625,577.5625 1821.75,578.6406 Q1822.4375,579.7031 1823.7813,579.7031 Q1824.4063,579.7031 1825,579.4375 Q1825.5938,579.1563 1826.2188,578.5781 L1826.2188,581.2969 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="171" x="1843.75" y="582.5801">TripManagement</text><line style="stroke:#000000;stroke-width:0.5;" x1="1752" x2="2074" y1="592.2969" y2="592.2969"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1759" y="606.4375"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="128" x="1771" y="614.8613">tripId: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1759" y="629.7188"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="158" x="1771" y="638.1426">vehicle: Vehicle</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1759" y="653"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="101" x="1771" y="661.4238">user: User</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1759" y="676.2813"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="156" x="1771" y="684.7051">startTime: Date</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1759" y="699.5625"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="148" x="1771" y="707.9863">endTime: Date</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1759" y="722.8438"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="298" x="1771" y="731.2676">endTimeWithinLimit: boolean</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1759" y="746.125"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="167" x="1771" y="754.5488">distance: double</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1759" y="769.4063"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="175" x="1771" y="777.8301">baseRate: double</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1759" y="792.6875"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="260" x="1771" y="801.1113">ratePer100Meters: double</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1759" y="815.9688"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="190" x="1771" y="824.3926">finePerDay: double</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1759" y="839.25"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="200" x="1771" y="847.6738">amountDue: double</text><line style="stroke:#000000;stroke-width:0.5;" x1="1752" x2="2074" y1="856.3906" y2="856.3906"/><ellipse cx="1762" cy="873.5313" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="156" x="1771" y="878.9551">startTrip(): void</text><ellipse cx="1762" cy="896.8125" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="148" x="1771" y="902.2363">endTrip(): void</text><ellipse cx="1762" cy="920.0938" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="249" x="1771" y="925.5176">calculateDistance(): void</text><ellipse cx="1762" cy="943.375" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="282" x="1771" y="948.7988">calculateAmountDue(): void</text><ellipse cx="1762" cy="966.6563" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="169" x="1771" y="972.0801">applyFine(): void</text></g><path d="M1284,682.0156 L1284,707.1484 A0,0 0 0 0 1284,707.1484 L1592,707.1484 A0,0 0 0 0 1592,707.1484 L1592,700.0156 L1755,724.3438 L1592,692.0156 L1592,692.0156 L1582,682.0156 L1284,682.0156 A0,0 0 0 0 1284,682.0156 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M1582,682.0156 L1582,692.0156 L1592,692.0156 L1582,682.0156 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="287" x="1290" y="699.0825">To check if the bike is returned within 8 hours</text><path d="M1284,717.1484 L1284,742.2813 A0,0 0 0 0 1284,742.2813 L1523,742.2813 A0,0 0 0 0 1523,742.2813 L1523,735.1484 L1755,770.9063 L1523,727.1484 L1523,727.1484 L1513,717.1484 L1284,717.1484 A0,0 0 0 0 1284,717.1484 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M1513,717.1484 L1513,727.1484 L1523,727.1484 L1513,717.1484 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="218" x="1290" y="734.2153">Base rate for the first x kilometers</text><path d="M1284,752.2813 L1284,777.4141 A0,0 0 0 0 1284,777.4141 L1613,777.4141 A0,0 0 0 0 1613,777.4141 L1613,770.2813 L1755,794.1875 L1613,762.2813 L1613,762.2813 L1603,752.2813 L1284,752.2813 A0,0 0 0 0 1284,752.2813 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M1603,752.2813 L1603,762.2813 L1613,762.2813 L1603,752.2813 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="308" x="1290" y="769.3481">Rate for every 100 meters beyond the base rate</text><path d="M1284,787.4141 L1284,812.5469 A0,0 0 0 0 1284,812.5469 L1586,812.5469 A0,0 0 0 0 1586,812.5469 L1586,805.4141 L1755,817.4688 L1586,797.4141 L1586,797.4141 L1576,787.4141 L1284,787.4141 A0,0 0 0 0 1284,787.4141 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M1576,787.4141 L1576,797.4141 L1586,797.4141 L1576,787.4141 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="281" x="1290" y="804.481">Fine for not returning the bike within 8 hours</text><path d="M1284,822.5469 L1284,847.6797 A0,0 0 0 0 1284,847.6797 L1716,847.6797 A0,0 0 0 0 1716,847.6797 L1716,840.5469 L1755,965.1563 L1716,832.5469 L1716,832.5469 L1706,822.5469 L1284,822.5469 A0,0 0 0 0 1284,822.5469 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M1706,822.5469 L1706,832.5469 L1716,832.5469 L1706,822.5469 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="411" x="1290" y="839.6138">Method to apply the fine if the bike is not returned within 8 hours</text><!--MD5=[578b60b9cbf4a2265f85988b2aa086bd]
+class PaymentManagement--><g id="elem_PaymentManagement"><rect codeLine="114" fill="#FFFFFF" height="165.6875" id="PaymentManagement" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="366" x="2461" y="1360.0156"/><ellipse cx="2529.75" cy="1376.6563" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M2532.7188,1382.2969 Q2532.1406,1382.5938 2531.5,1382.7344 Q2530.8594,1382.8906 2530.1563,1382.8906 Q2527.6563,1382.8906 2526.3281,1381.25 Q2525.0156,1379.5938 2525.0156,1376.4688 Q2525.0156,1373.3438 2526.3281,1371.6875 Q2527.6563,1370.0313 2530.1563,1370.0313 Q2530.8594,1370.0313 2531.5,1370.1875 Q2532.1563,1370.3438 2532.7188,1370.6406 L2532.7188,1373.3594 Q2532.0938,1372.7813 2531.5,1372.5156 Q2530.9063,1372.2344 2530.2813,1372.2344 Q2528.9375,1372.2344 2528.25,1373.3125 Q2527.5625,1374.375 2527.5625,1376.4688 Q2527.5625,1378.5625 2528.25,1379.6406 Q2528.9375,1380.7031 2530.2813,1380.7031 Q2530.9063,1380.7031 2531.5,1380.4375 Q2532.0938,1380.1563 2532.7188,1379.5781 L2532.7188,1382.2969 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="220" x="2550.25" y="1383.5801">PaymentManagement</text><line style="stroke:#000000;stroke-width:0.5;" x1="2462" x2="2826" y1="1393.2969" y2="1393.2969"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2469" y="1407.4375"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="182" x="2481" y="1415.8613">paymentId: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2469" y="1430.7188"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="101" x="2481" y="1439.1426">user: User</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2469" y="1454"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="160" x="2481" y="1462.4238">amount: double</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2469" y="1477.2813"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="340" x="2481" y="1485.7051">paymentMethod: PaymentMethod</text><line style="stroke:#000000;stroke-width:0.5;" x1="2462" x2="2826" y1="1494.4219" y2="1494.4219"/><ellipse cx="2472" cy="1511.5625" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="215" x="2481" y="1516.9863">makePayment(): void</text></g><g id="elem_GMN19"><path d="M2431,1120.0156 L2431,1220.8125 A0,0 0 0 0 2431,1220.8125 L2627.75,1220.8125 L2639.44,1359.7856 L2635.75,1220.8125 L2827,1220.8125 A0,0 0 0 0 2827,1220.8125 L2827,1130.0156 L2817,1120.0156 L2431,1120.0156 A0,0 0 0 0 2431,1120.0156 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M2817,1120.0156 L2817,1130.0156 L2827,1130.0156 L2817,1120.0156 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="249" x="2437" y="1137.0825">Within the PaymentManagement class,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="342" x="2437" y="1152.2153">there is an instance variable named paymentMethod,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="288" x="2437" y="1167.3481">and it should be of the type PaymentMethod.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="357" x="2437" y="1182.481">The actual implementation of the PaymentMethod class</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="296" x="2437" y="1197.6138">would contain details about the properties and</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="375" x="2437" y="1212.7466">methods associated with representing a payment method.</text></g><!--MD5=[1a502b0dbedafd291c48f46ef8646183]
+class Feedback--><g id="elem_Feedback"><rect codeLine="124" fill="#FFFFFF" height="165.6875" id="Feedback" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="269" x="2156.5" y="1360.0156"/><ellipse cx="2238.25" cy="1376.6563" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M2241.2188,1382.2969 Q2240.6406,1382.5938 2240,1382.7344 Q2239.3594,1382.8906 2238.6563,1382.8906 Q2236.1563,1382.8906 2234.8281,1381.25 Q2233.5156,1379.5938 2233.5156,1376.4688 Q2233.5156,1373.3438 2234.8281,1371.6875 Q2236.1563,1370.0313 2238.6563,1370.0313 Q2239.3594,1370.0313 2240,1370.1875 Q2240.6563,1370.3438 2241.2188,1370.6406 L2241.2188,1373.3594 Q2240.5938,1372.7813 2240,1372.5156 Q2239.4063,1372.2344 2238.7813,1372.2344 Q2237.4375,1372.2344 2236.75,1373.3125 Q2236.0625,1374.375 2236.0625,1376.4688 Q2236.0625,1378.5625 2236.75,1379.6406 Q2237.4375,1380.7031 2238.7813,1380.7031 Q2239.4063,1380.7031 2240,1380.4375 Q2240.5938,1380.1563 2241.2188,1379.5781 L2241.2188,1382.2969 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="97" x="2258.75" y="1383.5801">Feedback</text><line style="stroke:#000000;stroke-width:0.5;" x1="2157.5" x2="2424.5" y1="1393.2969" y2="1393.2969"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2164.5" y="1407.4375"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="185" x="2176.5" y="1415.8613">feedbackId: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2164.5" y="1430.7188"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="101" x="2176.5" y="1439.1426">user: User</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2164.5" y="1454"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="100" x="2176.5" y="1462.4238">rating: int</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2164.5" y="1477.2813"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="170" x="2176.5" y="1485.7051">comment: String</text><line style="stroke:#000000;stroke-width:0.5;" x1="2157.5" x2="2424.5" y1="1494.4219" y2="1494.4219"/><ellipse cx="2167.5" cy="1511.5625" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="243" x="2176.5" y="1516.9863">provideFeedback(): void</text></g><!--MD5=[f20c5b0a292fe6303417e09101976b4a]
+class SmartVehicleBookingSystem--><g id="elem_SmartVehicleBookingSystem"><rect codeLine="132" fill="#ADD1B2" height="328.6563" id="SmartVehicleBookingSystem" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="886" x="1743" y="170.0156"/><ellipse cx="2036.25" cy="186.6563" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M2039.2188,192.2969 Q2038.6406,192.5938 2038,192.7344 Q2037.3594,192.8906 2036.6563,192.8906 Q2034.1563,192.8906 2032.8281,191.25 Q2031.5156,189.5938 2031.5156,186.4688 Q2031.5156,183.3438 2032.8281,181.6875 Q2034.1563,180.0313 2036.6563,180.0313 Q2037.3594,180.0313 2038,180.1875 Q2038.6563,180.3438 2039.2188,180.6406 L2039.2188,183.3594 Q2038.5938,182.7813 2038,182.5156 Q2037.4063,182.2344 2036.7813,182.2344 Q2035.4375,182.2344 2034.75,183.3125 Q2034.0625,184.375 2034.0625,186.4688 Q2034.0625,188.5625 2034.75,189.6406 Q2035.4375,190.7031 2036.7813,190.7031 Q2037.4063,190.7031 2038,190.4375 Q2038.5938,190.1563 2039.2188,189.5781 L2039.2188,192.2969 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="291" x="2056.75" y="193.5801">SmartVehicleBookingSystem</text><line style="stroke:#000000;stroke-width:0.5;" x1="1744" x2="2628" y1="203.2969" y2="203.2969"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1751" y="217.4375"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="180" x="1763" y="225.8613">users: List&lt;User&gt;</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1751" y="240.7188"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="237" x="1763" y="249.1426">vehicles: List&lt;Vehicle&gt;</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1751" y="264"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="307" x="1763" y="272.4238">parkingLots: List&lt;ParkingLot&gt;</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1751" y="287.2813"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="298" x="1763" y="295.7051">trips: List&lt;TripManagement&gt;</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1751" y="310.5625"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="401" x="1763" y="318.9863">payments: List&lt;PaymentManagement&gt;</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1751" y="333.8438"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="281" x="1763" y="342.2676">feedbacks: List&lt;Feedback&gt;</text><line style="stroke:#000000;stroke-width:0.5;" x1="1744" x2="2628" y1="350.9844" y2="350.9844"/><ellipse cx="1754" cy="368.125" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="294" x="1763" y="373.5488">registerUser(user: User): void</text><ellipse cx="1754" cy="391.4063" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="341" x="1763" y="396.8301">addVehicle(vehicle: Vehicle): void</text><ellipse cx="1754" cy="414.6875" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="444" x="1763" y="420.1113">addParkingLot(parkingLot: ParkingLot): void</text><ellipse cx="1754" cy="437.9688" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="444" x="1763" y="443.3926">createTrip(user: User, vehicle: Vehicle): void</text><ellipse cx="1754" cy="461.25" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="860" x="1763" y="466.6738">processPayment(user: User, amount: double, paymentMethod: PaymentMethod): void</text><ellipse cx="1754" cy="484.5313" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="20" lengthAdjust="spacing" textLength="408" x="1763" y="489.9551">addFeedback(feedback: Feedback): void</text></g><!--MD5=[29fe19ce294944fa80f389ae9bd987a4]
+reverse link User to Student--><g id="link_User_Student"><path d="M1669.1,1234.4656 C1539.45,1269.1456 1377.78,1314.3356 1235,1360.0156 C1212.44,1367.2356 1188.78,1375.2756 1165.61,1383.4356 " fill="none" id="User-backto-Student" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="1667.67,1227.5956,1688.8,1229.2056,1671.28,1241.1256,1667.67,1227.5956" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[f05d1a0e08e780e850ad70be2dcdc178]
+reverse link User to Staff--><g id="link_User_Staff"><path d="M1680.81,1310.4656 C1637.84,1336.1856 1595.17,1361.7156 1559.02,1383.3556 " fill="none" id="User-backto-Staff" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="1677.5,1304.2956,1698.25,1300.0356,1684.68,1316.3056,1677.5,1304.2956" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[d87c224b488f6c9759d0a77cb4053101]
+reverse link User to Teacher--><g id="link_User_Teacher"><path d="M1913,1320.2056 C1913,1342.5756 1913,1364.4556 1913,1383.3556 " fill="none" id="User-backto-Teacher" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="1906,1320.0356,1913,1300.0356,1920,1320.0356,1906,1320.0356" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[c6100b592e29ab2a9436cfea8d37588a]
+link User to Wallet--><g id="link_User_Wallet"><path codeLine="147" d="M1688.63,1210.8356 C1539.9,1236.6956 1340.4,1270.9956 1164,1300.0156 C994.85,1327.8456 948.58,1315.6456 783,1360.0156 C762.94,1365.3956 742.16,1372.0056 721.8,1379.1256 " fill="none" id="User-to-Wallet" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="709.53,1383.4856,716.5239,1385.2423,720.8354,1379.4621,713.8415,1377.7054,709.53,1383.4856" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1673.1366" y="1208.9847">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="718.0477" y="1372.3837">1</text></g><!--MD5=[fee8e87c555fb17bb5f61d4b391b5f3b]
+link User to TripManagement--><g id="link_User_TripManagement"><path codeLine="148" d="M1925.71,1040.9956 C1926.06,1025.9556 1926.29,1010.2956 1926.41,994.4256 " fill="none" id="User-to-TripManagement" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="1926.48,981.0556,1922.4471,987.0336,1926.4141,993.0554,1930.447,987.0775,1926.48,981.0556" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1918.2135" y="1030.1503">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="1903.5512" y="1000.9826">0..*</text></g><!--MD5=[9dc159fa5d4df9223f2b03fbde4873fd]
+link TripManagement to User--><g id="link_TripManagement_User"><path codeLine="155" d="M1900.27,981.0556 C1900.32,996.8556 1900.47,1012.5556 1900.73,1027.7656 " fill="none" id="TripManagement-to-User" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="1900.99,1040.9956,1904.8706,1034.9177,1900.7527,1028.998,1896.8721,1035.0759,1900.99,1040.9956" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1891.6688" y="1000.9826">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1892.0644" y="1030.1503">1</text></g><!--MD5=[6e19685f444a82e1aeb22ef3f99ff010]
+link User to PaymentManagement--><g id="link_User_PaymentManagement"><path codeLine="149" d="M2137.07,1254.2456 C2227.11,1286.3656 2331.68,1324.0256 2426,1360.0156 C2433.45,1362.8556 2441.05,1365.7956 2448.72,1368.7856 " fill="none" id="User-to-PaymentManagement" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="2460.82,1373.5256,2456.6912,1367.6135,2449.6459,1369.1508,2453.7747,1375.0629,2460.82,1373.5256" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="2145.2663" y="1269.5969">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="2433.2767" y="1381.8761">0..*</text></g><!--MD5=[2f82f088d38b8e9bba587b59864d6869]
+link PaymentManagement to User--><g id="link_PaymentManagement_User"><path codeLine="156" d="M2460.69,1359.8956 C2359.48,1321.2856 2246.51,1280.7556 2149.52,1247.2256 " fill="none" id="PaymentManagement-to-User" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="2137.16,1242.9656,2141.5256,1248.7051,2148.5027,1246.8828,2144.1371,1241.1433,2137.16,1242.9656" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="2444.7879" y="1353.1489">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="2144.6465" y="1242.1689">1</text></g><!--MD5=[f3af3e4376504b99e4d7659058753524]
+link User to Feedback--><g id="link_User_Feedback"><path codeLine="150" d="M2092.59,1300.0356 C2117.29,1317.7056 2142.2,1335.5356 2165.63,1352.2956 " fill="none" id="User-to-Feedback" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="2176.29,1359.9256,2173.7351,1353.1823,2166.5279,1352.947,2169.0827,1359.6904,2176.29,1359.9256" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="2094.7413" y="1320.0332">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="2157.7174" y="1348.9442">1</text></g><!--MD5=[8aac202c2d946692ae185377e66d0c1b]
+link User to Vehicle--><g id="link_User_Vehicle"><path codeLine="151" d="M1688.91,1215.7356 C1540.51,1243.5956 1341.28,1278.2756 1164,1300.0156 C806.58,1343.8456 705.11,1271.7356 356,1360.0156 C347.28,1362.2156 338.46,1364.8156 329.65,1367.6956 " fill="none" id="User-to-Vehicle" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="317.2,1371.9556,324.1707,1373.8022,328.5562,1368.0779,321.5855,1366.2314,317.2,1371.9556" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1672.713" y="1229.7029">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="307.8847" y="1360.9069">0..*</text></g><!--MD5=[4e118f658a2ef8636f26115a7541c213]
+link Vehicle to ParkingLot--><g id="link_Vehicle_ParkingLot"><path codeLine="153" d="M321.7,1514.0456 C333.19,1518.4056 344.71,1522.4656 356,1526.0156 C696,1633.0556 1108.56,1697.2756 1341.83,1727.8156 " fill="none" id="Vehicle-to-ParkingLot" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="1354.87,1729.5056,1349.4389,1724.7619,1342.9712,1727.9507,1348.4023,1732.6945,1354.87,1729.5056" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="329.5266" y="1534.6868">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="1323.1442" y="1725.3798">0..1</text></g><!--MD5=[3978bbcff664985f434b7bff5cbb131d]
+link TripManagement to Vehicle--><g id="link_TripManagement_Vehicle"><path codeLine="154" d="M1750.98,969.2756 C1745.41,973.4056 1739.75,977.3356 1734,981.0156 C1294.66,1262.6356 1108.81,1167.7456 604,1300.0156 C494.3,1328.7556 463.31,1323.3456 356,1360.0156 C349.31,1362.3056 342.53,1364.7456 335.71,1367.2956 " fill="none" id="TripManagement-to-Vehicle" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="323.42,1372.0156,330.4545,1373.6018,334.6242,1367.7185,327.5897,1366.1323,323.42,1372.0156" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1734.9384" y="975.6394">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="339.3446" y="1360.9731">1</text></g><!--MD5=[9eac371ae9bd91d6eff9e8ce2cd76c2a]
+link SmartVehicleBookingSystem to User--><g id="link_SmartVehicleBookingSystem_User"><path codeLine="158" d="M2189.54,499.0156 C2186.29,634.5556 2166.98,828.9256 2093,981.0156 C2084.72,998.0456 2074.33,1014.5356 2062.76,1030.2256 " fill="none" id="SmartVehicleBookingSystem-to-User" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="2054.56,1040.9456,2061.3824,1038.61,2061.8504,1031.4141,2055.028,1033.7497,2054.56,1040.9456" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="2181.5192" y="518.8871">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="2039.0791" y="1030.0974">0..*</text></g><!--MD5=[98949996a8d26e7b8ad87f21db12715b]
+link SmartVehicleBookingSystem to Vehicle--><g id="link_SmartVehicleBookingSystem_Vehicle"><path codeLine="159" d="M1742.85,353.6256 C1273.85,399.2756 554.61,550.7256 208,1041.0156 C142.19,1134.1056 146.04,1271.3756 157.49,1358.7356 " fill="none" id="SmartVehicleBookingSystem-to-Vehicle" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="159.31,1371.7756,162.4475,1365.2829,157.661,1359.8895,154.5234,1366.3822,159.31,1371.7756" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1727.1646" y="350.8962">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="133.7123" y="1360.7084">0..*</text></g><!--MD5=[fe39ae3548c5ec8461c5d0e94b79231a]
+link SmartVehicleBookingSystem to ParkingLot--><g id="link_SmartVehicleBookingSystem_ParkingLot"><path codeLine="160" d="M2394.77,499.0856 C2678.48,740.7756 3120.56,1199.8356 2845,1526.0156 C2701.92,1695.3756 2038.67,1736.4356 1710.67,1746.3656 " fill="none" id="SmartVehicleBookingSystem-to-ParkingLot" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="1697.22,1746.7556,1703.336,1750.5759,1709.2147,1746.3997,1703.0987,1742.5794,1697.22,1746.7556" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="2396.0486" y="518.9602">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="1704.9285" y="1743.3575">0..*</text></g><!--MD5=[6bca2cb2075b2159a04917776948ed53]
+link SmartVehicleBookingSystem to TripManagement--><g id="link_SmartVehicleBookingSystem_TripManagement"><path codeLine="161" d="M2082.98,499.0956 C2072.98,514.9756 2062.72,531.2656 2052.44,547.5956 " fill="none" id="SmartVehicleBookingSystem-to-TripManagement" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="2045.32,558.9056,2051.9023,555.9606,2051.7155,548.7519,2045.1332,551.6969,2045.32,558.9056" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="2070.1307" y="518.9707">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="2026.662" y="548.1225">0..*</text></g><!--MD5=[96cc42b148a32ed8908867248ab69bb0]
+link SmartVehicleBookingSystem to PaymentManagement--><g id="link_SmartVehicleBookingSystem_PaymentManagement"><path codeLine="162" d="M2235.83,499.3156 C2241.5,519.3656 2247.02,539.6156 2252,559.0156 C2335.79,885.5456 2219.1,1024.9556 2414,1300.0156 C2427.74,1319.4056 2445.05,1336.6856 2463.97,1351.9256 " fill="none" id="SmartVehicleBookingSystem-to-PaymentManagement" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="2474.32,1359.9456,2472.0265,1353.109,2464.8336,1352.5966,2467.1271,1359.4333,2474.32,1359.9456" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="2229.7635" y="518.6615">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="2460.2321" y="1348.966">0..*</text></g><!--MD5=[357b373b1dedd651f266f81378518317]
+link SmartVehicleBookingSystem to Feedback--><g id="link_SmartVehicleBookingSystem_Feedback"><path codeLine="163" d="M2201.52,499.0856 C2223.77,733.5556 2264.02,1157.7256 2281.96,1346.7056 " fill="none" id="SmartVehicleBookingSystem-to-Feedback" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="2283.21,1359.9056,2286.6251,1353.5545,2282.076,1347.9593,2278.6609,1354.3105,2283.21,1359.9056" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="2194.042" y="518.9602">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="2258.492" y="1348.9224">0..*</text></g><rect fill="none" height="39.5781" style="stroke:none;stroke-width:1.0;" width="203" x="1455.28" y="1920.6719"/><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="3" x="1555.28" y="1929.9541"> </text><text fill="#888888" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" text-decoration="underline" textLength="203" x="1455.28" y="1945.3076">Designed By 2020900023</text><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="3" x="1555.28" y="1957.8916"> </text><!--MD5=[dda5bc907c956b4bab5a6c344692fc50]
+@startuml Assignment-1_2020900023_2
+skinparam class {
+ BackgroundColor #FFFFFF
+ BorderColor #000000
+ ArrowColor #000000
+ FontColor #000000
+ BackgroundColor<<SmartVehicleBookingSystem>> #ADD1B2
+}
+
+skinparam classFontColor black
+skinparam classFontSize 20
+skinparam classFontName sans-serif
+
+title \n<size:24><b>Vilal Ali \n<size:18>Roll Number: 2020900023 \n\n\n<size:24><b><u>Smart Vehicle Booking System - Class Diagram</u></b></size>\n
+
+abstract class User #A9DCDF {
+ - userId: String
+ - name: String
+ - email: String
+ - password: String
+ - wallet: Wallet
+ + createAccount(): void
+ + uploadId(): void
+ + addMoneyToWallet(amount: double): void
+ + viewTripHistory(): void
+}
+
+class Student extends User {
+ - studentId: String
+ + getStudentId(): String
+ + getUserDetails(): Map<String, Object>
+}
+
+class Staff extends User {
+ - staffId: String
+ + getStaffId(): String
+ + getUserDetails(): Map<String, Object>
+}
+
+class Teacher extends User {
+ - teacherId: String
+ + getTeacherId(): String
+ + getUserDetails(): Map<String, Object>
+}
+
+class Wallet {
+ - balance: double
+ + addMoney(amount: double): void
+ + deductMoney(amount: double): void
+}
+
+class Vehicle {
+ - vehicleId: String
+ - vehicleType: VehicleType
+ + getVehicleId(): String
+ + getVehicleType(): VehicleType
+}
+
+note top : Within the Vehicle class, \nthere is an instance variable named VehicleType, \nand it should be of the type VehicleType. \nThe actual implementation of the VehicleType class \nwould contain details about the properties and \nmethods associated with representing a vehicle type.
+
+class ParkingLot {
+ - parkingLotId: String
+ - capacity: int
+ - availability: int
+ - location: String
+ - maintenanceStatus: String
+ - securityFeatures: String
+ + getParkingLotId(): String
+ + getCapacity(): int
+ + getAvailability(): int
+ + getLocation(): String
+ + getMaintenanceStatus(): String
+ + getSecurityFeatures(): String
+}
+
+class TripManagement {
+ - tripId: String
+ - vehicle: Vehicle
+ - user: User
+ - startTime: Date
+ - endTime: Date
+ - endTimeWithinLimit: boolean
+ - distance: double
+ - baseRate: double 
+ - ratePer100Meters: double
+ - finePerDay: double
+ - amountDue: double
+ + startTrip(): void
+ + endTrip(): void
+ + calculateDistance(): void
+ + calculateAmountDue(): void
+ + applyFine(): void
+
+}
+note left of TripManagement::endTimeWithinLimit
+  To check if the bike is returned within 8 hours
+end note
+
+note left of TripManagement::baseRate
+  Base rate for the first x kilometers
+end note
+
+note left of TripManagement::ratePer100Meters
+  Rate for every 100 meters beyond the base rate
+end note
+
+note left of TripManagement::finePerDay
+  Fine for not returning the bike within 8 hours
+end note
+
+note left of TripManagement::applyFine
+  Method to apply the fine if the bike is not returned within 8 hours
+end note
+
+class PaymentManagement {
+ - paymentId: String
+ - user: User
+ - amount: double
+ - paymentMethod: PaymentMethod
+ + makePayment(): void
+}
+
+note top : Within the PaymentManagement class, \nthere is an instance variable named paymentMethod, \nand it should be of the type PaymentMethod. \nThe actual implementation of the PaymentMethod class \nwould contain details about the properties and \nmethods associated with representing a payment method.
+
+class Feedback {
+ - feedbackId: String
+ - user: User
+ - rating: int
+ - comment: String
+ + provideFeedback(): void
+}
+
+class SmartVehicleBookingSystem #ADD1B2{
+ - users: List<User>
+ - vehicles: List<Vehicle>
+ - parkingLots: List<ParkingLot>
+ - trips: List<TripManagement>
+ - payments: List<PaymentManagement>
+ - feedbacks: List<Feedback>
+ + registerUser(user: User): void
+ + addVehicle(vehicle: Vehicle): void
+ + addParkingLot(parkingLot: ParkingLot): void
+ + createTrip(user: User, vehicle: Vehicle): void
+ + processPayment(user: User, amount: double, paymentMethod: PaymentMethod): void
+ + addFeedback(feedback: Feedback): void
+}
+
+User "1" - -o "1" Wallet
+User "1" - -o "0..*" TripManagement
+User "1" - -o "0..*" PaymentManagement
+User "1" - -o "1" Feedback
+User "1" - -o "0..*" Vehicle
+
+Vehicle "1" - -o "0..1" ParkingLot
+TripManagement "1" - -o "1" Vehicle
+TripManagement "1" - -o "1" User
+PaymentManagement "1" - -o "1" User
+
+SmartVehicleBookingSystem "1" - -o "0..*" User
+SmartVehicleBookingSystem "1" - -o "0..*" Vehicle
+SmartVehicleBookingSystem "1" - -o "0..*" ParkingLot
+SmartVehicleBookingSystem "1" - -o "0..*" TripManagement
+SmartVehicleBookingSystem "1" - -o "0..*" PaymentManagement
+SmartVehicleBookingSystem "1" - -o "0..*" Feedback
+
+'==========='
+
+
+footer \n<size:14><b><u>Designed By 2020900023</u></b></size>\n
+@enduml
+
+@startuml Assignment-1_2020900023_2
+skinparam class {
+ BackgroundColor #FFFFFF
+ BorderColor #000000
+ ArrowColor #000000
+ FontColor #000000
+ BackgroundColor<<SmartVehicleBookingSystem>> #ADD1B2
+}
+
+skinparam classFontColor black
+skinparam classFontSize 20
+skinparam classFontName sans-serif
+
+title \n<size:24><b>Vilal Ali \n<size:18>Roll Number: 2020900023 \n\n\n<size:24><b><u>Smart Vehicle Booking System - Class Diagram</u></b></size>\n
+
+abstract class User #A9DCDF {
+ - userId: String
+ - name: String
+ - email: String
+ - password: String
+ - wallet: Wallet
+ + createAccount(): void
+ + uploadId(): void
+ + addMoneyToWallet(amount: double): void
+ + viewTripHistory(): void
+}
+
+class Student extends User {
+ - studentId: String
+ + getStudentId(): String
+ + getUserDetails(): Map<String, Object>
+}
+
+class Staff extends User {
+ - staffId: String
+ + getStaffId(): String
+ + getUserDetails(): Map<String, Object>
+}
+
+class Teacher extends User {
+ - teacherId: String
+ + getTeacherId(): String
+ + getUserDetails(): Map<String, Object>
+}
+
+class Wallet {
+ - balance: double
+ + addMoney(amount: double): void
+ + deductMoney(amount: double): void
+}
+
+class Vehicle {
+ - vehicleId: String
+ - vehicleType: VehicleType
+ + getVehicleId(): String
+ + getVehicleType(): VehicleType
+}
+
+note top : Within the Vehicle class, \nthere is an instance variable named VehicleType, \nand it should be of the type VehicleType. \nThe actual implementation of the VehicleType class \nwould contain details about the properties and \nmethods associated with representing a vehicle type.
+
+class ParkingLot {
+ - parkingLotId: String
+ - capacity: int
+ - availability: int
+ - location: String
+ - maintenanceStatus: String
+ - securityFeatures: String
+ + getParkingLotId(): String
+ + getCapacity(): int
+ + getAvailability(): int
+ + getLocation(): String
+ + getMaintenanceStatus(): String
+ + getSecurityFeatures(): String
+}
+
+class TripManagement {
+ - tripId: String
+ - vehicle: Vehicle
+ - user: User
+ - startTime: Date
+ - endTime: Date
+ - endTimeWithinLimit: boolean
+ - distance: double
+ - baseRate: double 
+ - ratePer100Meters: double
+ - finePerDay: double
+ - amountDue: double
+ + startTrip(): void
+ + endTrip(): void
+ + calculateDistance(): void
+ + calculateAmountDue(): void
+ + applyFine(): void
+
+}
+note left of TripManagement::endTimeWithinLimit
+  To check if the bike is returned within 8 hours
+end note
+
+note left of TripManagement::baseRate
+  Base rate for the first x kilometers
+end note
+
+note left of TripManagement::ratePer100Meters
+  Rate for every 100 meters beyond the base rate
+end note
+
+note left of TripManagement::finePerDay
+  Fine for not returning the bike within 8 hours
+end note
+
+note left of TripManagement::applyFine
+  Method to apply the fine if the bike is not returned within 8 hours
+end note
+
+class PaymentManagement {
+ - paymentId: String
+ - user: User
+ - amount: double
+ - paymentMethod: PaymentMethod
+ + makePayment(): void
+}
+
+note top : Within the PaymentManagement class, \nthere is an instance variable named paymentMethod, \nand it should be of the type PaymentMethod. \nThe actual implementation of the PaymentMethod class \nwould contain details about the properties and \nmethods associated with representing a payment method.
+
+class Feedback {
+ - feedbackId: String
+ - user: User
+ - rating: int
+ - comment: String
+ + provideFeedback(): void
+}
+
+class SmartVehicleBookingSystem #ADD1B2{
+ - users: List<User>
+ - vehicles: List<Vehicle>
+ - parkingLots: List<ParkingLot>
+ - trips: List<TripManagement>
+ - payments: List<PaymentManagement>
+ - feedbacks: List<Feedback>
+ + registerUser(user: User): void
+ + addVehicle(vehicle: Vehicle): void
+ + addParkingLot(parkingLot: ParkingLot): void
+ + createTrip(user: User, vehicle: Vehicle): void
+ + processPayment(user: User, amount: double, paymentMethod: PaymentMethod): void
+ + addFeedback(feedback: Feedback): void
+}
+
+User "1" - -o "1" Wallet
+User "1" - -o "0..*" TripManagement
+User "1" - -o "0..*" PaymentManagement
+User "1" - -o "1" Feedback
+User "1" - -o "0..*" Vehicle
+
+Vehicle "1" - -o "0..1" ParkingLot
+TripManagement "1" - -o "1" Vehicle
+TripManagement "1" - -o "1" User
+PaymentManagement "1" - -o "1" User
+
+SmartVehicleBookingSystem "1" - -o "0..*" User
+SmartVehicleBookingSystem "1" - -o "0..*" Vehicle
+SmartVehicleBookingSystem "1" - -o "0..*" ParkingLot
+SmartVehicleBookingSystem "1" - -o "0..*" TripManagement
+SmartVehicleBookingSystem "1" - -o "0..*" PaymentManagement
+SmartVehicleBookingSystem "1" - -o "0..*" Feedback
+
+
+
+footer \n<size:14><b><u>Designed By 2020900023</u></b></size>\n
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 22:31:30 IST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: IN
+--></g></svg>
