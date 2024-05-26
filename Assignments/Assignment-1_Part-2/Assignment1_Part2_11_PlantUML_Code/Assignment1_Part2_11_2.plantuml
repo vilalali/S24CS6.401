@@ -1,0 +1,91 @@
+@startuml Assignment1_Part2_11_2
+skinparam class {
+ BackgroundColor #FFFFFF
+ BorderColor #000000
+ ArrowColor #000000
+ FontColor #000000
+
+}
+
+skinparam classFontColor black
+skinparam classFontSize 20
+skinparam classFontName sans-serif
+
+title <size:24></size>
+
+abstract class VehicleType #A9DCDF {
+ - vehicleTypeId: String
+ + getVehicleTypeId(): String
+ + getVehicleDetails(): Map<String, Object>
+}
+
+note right : Within the Vehicle class, \nthere is an instance variable named VehicleType, \nand it should be of the type VehicleType. \nThe actual implementation of the VehicleType class \nwould contain details about the properties and \nmethods associated with representing a vehicle type.
+
+class Bike extends VehicleType {
+ - bikeSpecific: String
+ + getBikeSpecific(): String
+}
+
+class Moped extends VehicleType {
+ - bicycleSpecific: String
+ + getBicycleSpecific(): String
+}
+
+class Bicycle extends VehicleType {
+ - bicycleSpecific: String
+ + getBicycleSpecific(): String
+}
+
+abstract class PaymentMethod #A9DCDF {
+ #accountId: String
+ #accountHolderName: String
+ +makePayment(amount: double): boolean
+}
+
+note top : Within the PaymentManagement class, \nthere is an instance variable named paymentMethod, \nand it should be of the type PaymentMethod. \nThe actual implementation of the PaymentMethod class \nwould contain details about the properties and \nmethods associated with representing a payment method.
+
+class InAppWalletPayment {
+ -addMoneyToWallet(amount: double): boolean
+ +makePayment(amount: double): boolean
+ -enableAutoDeduction(): void
+}
+
+class UPIPayment {
+ #upiId: String
+ +makePayment(amount: double): boolean
+}
+
+class CardPayment {
+ #cardNumber: String
+ #expiryDate: String
+ #cvv: String
+ +makePayment(amount: double): boolean
+}
+
+class InternetBanking {
+ #bankName: String
+ +makePayment(amount: double): boolean
+}
+
+class DeductFromSalary {
+ #employeeId: int
+ +makePayment(amount: double): boolean
+}
+
+class FromStudentFee {
+ #studentId: int
+ +makePayment(amount: double): boolean
+}
+
+PaymentMethod <|-- InAppWalletPayment
+PaymentMethod <|-- UPIPayment
+PaymentMethod <|-- CardPayment
+PaymentMethod <|-- InternetBanking
+PaymentMethod <|-- DeductFromSalary
+PaymentMethod <|-- FromStudentFee
+
+
+
+footer \n<size:14><b><u>Designed By Assignment1_Part2_11</u></b></size>\n
+
+@enduml
