@@ -1,0 +1,27 @@
+@startuml
+set separator none
+title Context Diagram: Service-Oriented Pattern
+
+left to right direction
+
+!include <C4/C4>
+!include <C4/C4_Context>
+
+Person(User, "User Interaction", $descr="User interactions with the system.")
+
+System(BookingService, "Data Processing", $descr="Manages ticket bookings and interacts with other services.")
+System(PaymentProcessingService, "Data Processing", $descr="Handles payment transactions for bookings.")
+System(VenueCapacityManagementService, "Data Processing", $descr="Manages venue seating capacity.")
+System(NotificationService, "Communication", $descr="Sends notifications to visitors regarding booking confirmations.")
+System(TicketingInventoryManagementService, "Data Processing", $descr="Manages ticket inventory.")
+System(UserProfileAndAuthenticationService, "Management", $descr="Manages user profiles and handles authentication and authorization.")
+System(AnalyticsAndReportingService, "Analytics", $descr="Analyzes booking data and generates reports for event administrators.")
+
+Rel(BookingService, PaymentProcessingService, "Interacts with")
+Rel(BookingService, VenueCapacityManagementService, "Interacts with")
+Rel(BookingService, TicketingInventoryManagementService, "Interacts with")
+Rel(BookingService, NotificationService, "Sends booking confirmations to")
+Rel(BookingService, AnalyticsAndReportingService, "Shares booking data with")
+
+SHOW_LEGEND(true)
+@enduml

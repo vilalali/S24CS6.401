@@ -1,0 +1,29 @@
+
+
+@startuml Stakeholders
+set separator none
+title Stakeholders
+
+top to bottom direction
+
+!include <C4/C4>
+!include <C4/C4_Context>
+
+Person(Visitors, "Visitors ", $descr="", $tags="dfgdfdfgd", $link="")
+Person(EventOrganizers, "Event Organizers", $descr="", $tags="", $link="")
+Person(VenueOwners, "Venue Owners", $descr="", $tags="", $link="")
+Person(CityAuthorities, "City Authorities", $descr="", $tags="", $link="")
+
+Person(TechnologyProviders, "System Technology Providers", $descr="", $tags="", $link="")
+Person(WeatherForecastProviders, "Weather Forecast Providers", $descr="", $tags="", $link="")
+Person(AnalyticsandReportingTeams, "Analytics and Reporting Teams", $descr="", $tags="", $link="")
+Person(MediaandPress, "Media and Press Representative", $descr="", $tags="", $link="")
+
+Person(LocalBusinesses, "Local Businesses", $descr="", $tags="", $link="")
+Person(EventSponsors, "Event Sponsors", $descr="", $tags="", $link="")
+Person(EventVolunteers, "Event Volunteers", $descr="", $tags="", $link="")
+Person(SecurityPersonnel, "Security Personnel", $descr="", $tags="", $link="")
+
+SHOW_LEGEND(true)
+@enduml
+

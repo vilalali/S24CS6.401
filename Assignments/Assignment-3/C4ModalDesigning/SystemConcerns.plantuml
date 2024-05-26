@@ -1,0 +1,27 @@
+@startuml SystemConcerns
+set separator none
+title Concerns
+
+top to bottom direction
+
+!include <C4/C4>
+!include <C4/C4_Context>
+
+Person(Visitors, "Visitors", $descr="Concern: Finding parking, Checking updates, Accessing facilities.", $tags="", $link="")
+Person(EventOrganizers, "Event Organizers", $descr="Concern: Coordination, Visitor experience, Communication.", $tags="", $link="")
+Person(VenueOwners, "Venue Owners", $descr="Concern: Safety, Crowd control, Facilities.", $tags="", $link="")
+Person(CityAuthorities, "City Authorities", $descr="Concern: Traffic management, Compliance, Public safety.", $tags="", $link="")
+
+Person(TechnologyProviders, "System Technology Providers", $descr="Concern: Reliability, Support, Data security.", $tags="", $link="")
+Person(WeatherForecastProviders, "Weather Forecast Providers", $descr="Concern: Accuracy, Timeliness, Accessibility.", $tags="", $link="")
+Person(AnalyticsandReportingTeams, "Analytics and Reporting Teams", $descr="Concern: Data analysis, Reporting, Privacy.", $tags="", $link="")
+Person(MediaandPress, "Media and Press Representative", $descr="Concern: Accurate coverage, Access to information, Reporting.", $tags="", $link="")
+
+
+Person(LocalBusinesses, "Local Businesses", $descr="Concern: Minimize disruption, Maximize revenue, Address concerns.", $tags="", $link="")
+Person(EventSponsors, "Event Sponsors", $descr="Concern: Brand exposure, Brand alignment, Monitoring impact.", $tags="", $link="")
+Person(EventVolunteers, "Event Volunteers", $descr="Concern: Training, Clear instructions, Positive experience.", $tags="", $link="")
+Person(SecurityPersonnel, "Security Personnel", $descr="Concern: Safety, Monitoring, Coordination.", $tags="", $link="")
+
+SHOW_LEGEND(true)
+@enduml

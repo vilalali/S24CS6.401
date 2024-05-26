@@ -1,0 +1,39 @@
+@startuml
+package "Location Tracking Microservice" {
+    class LocationService {
+        +subscribe(observer: LocationObserver): void
+        +unsubscribe(observer: LocationObserver): void
+        +notifyObservers(locationData: LocationData): void
+    }
+
+    interface LocationObserver {
+        +update(locationData: LocationData): void
+    }
+
+    class SurgePricePredictor {
+        +update(locationData: LocationData): void
+    }
+
+    class TripTimeEstimationCalculator {
+        +update(locationData: LocationData): void
+    }
+
+    class RideMatcher {
+        +update(locationData: LocationData): void
+    }
+
+    class LocationData {
+        -latitude: double
+        -longitude: double
+        -timestamp: long
+        +getLatitude(): double
+        +getLongitude(): double
+        +getTimestamp(): long
+    }
+}
+
+LocationService "1" --> "*" LocationObserver
+LocationObserver <|.. SurgePricePredictor
+LocationObserver <|.. TripTimeEstimationCalculator
+LocationObserver <|.. RideMatcher
+@enduml

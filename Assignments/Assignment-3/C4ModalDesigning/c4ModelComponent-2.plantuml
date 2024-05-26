@@ -1,0 +1,14 @@
+@startuml dfgdf
+
+package "Automated Parking Control" {
+    [Parking Lot Availability Service]
+}
+
+package "Automated Venue Entry Management" {
+    [Venue Entry Management Service]
+}
+
+[Venue Entry Management Service] --> [Visualization and Analytics Service]
+[Parking Lot Availability Service] --> [Visualization and Analytics Service]
+
+@enduml

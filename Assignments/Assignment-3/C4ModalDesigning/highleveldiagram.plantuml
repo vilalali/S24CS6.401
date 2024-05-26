@@ -1,0 +1,23 @@
+@startuml fgfgfh
+set separator none
+title Context Diagram: Publish-Subscribe Pattern
+
+top to bottom direction
+
+!include <C4/C4>
+!include <C4/C4_Context>
+
+Person(User, "User Interaction", $descr="User interactions with the system.")
+System(EventBus, "Communication", $descr="Central communication hub that routes events from publishers to subscribers.")
+System(BookingService, "Data Processing", $descr="Publishes events such as ticket booked.")
+System(VenueCapacityManagementService, "Data Processing", $descr="Publishes events such as venue full.")
+System(NotificationService, "Communication", $descr="Subscribes to booking events and sends notifications to visitors.")
+System(AnalyticsAndReportingService, "Analytics", $descr="Subscribes to booking events and processes data for insights.")
+
+Rel(BookingService, EventBus, "Publishes events")
+Rel(VenueCapacityManagementService, EventBus, "Publishes events")
+Rel(EventBus, NotificationService, "Routes events to")
+Rel(EventBus, AnalyticsAndReportingService, "Routes events to")
+
+SHOW_LEGEND(true)
+@enduml

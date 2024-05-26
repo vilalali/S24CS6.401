@@ -1,0 +1,23 @@
+@startuml NdR:EuropeanResearchersNight
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+Person(visitor, "Visitor")
+System_Boundary(UnivaqStreetScience, "Univaq Street Science") {
+    Container(VenueAvailabilityService, "Venue Availability Service", "Provides real-time information on venue availability and suggests alternative venues.", "Java")
+    Container(ParkingLotAvailabilityService, "Parking Lot Availability Service", "Manages parking lot information and suggests available parking lots based on venue preference.", "Java")
+    Container(BookingTicketingService, "Booking/Ticketing Service", "Handles ticket booking for entertainment events, considering venue capacity.", "Java")
+    Container(AccessibilityService, "Accessibility Service", "Ensures accessibility for all attendees, providing services like wheelchair-accessible routes and sign language interpreters.", "Java")
+    Container(WeatherForecastService, "Weather Forecast Service", "Retrieves weather forecasts and provides them to visitors.", "Java")
+    Container(RecommendationService, "Recommendation Service", "Analyzes visitor preferences and event popularity to make recommendations.", "Java")
+    Container(VisualizationAnalyticsService, "Visualization and Analytics Service", "Provides event administrators with analytical insights.", "Java")
+}
+
+Rel(visitor, VenueAvailabilityService, "Uses", "HTTP/HTTPS")
+Rel(visitor, ParkingLotAvailabilityService, "Uses", "HTTP/HTTPS")
+Rel(visitor, BookingTicketingService, "Uses", "HTTP/HTTPS")
+Rel(visitor, AccessibilityService, "Uses", "HTTP/HTTPS")
+Rel(visitor, WeatherForecastService, "Uses", "HTTP/HTTPS")
+Rel(visitor, RecommendationService, "Uses", "HTTP/HTTPS")
+Rel(visitor, VisualizationAnalyticsService, "Uses", "HTTP/HTTPS")
+
+@enduml

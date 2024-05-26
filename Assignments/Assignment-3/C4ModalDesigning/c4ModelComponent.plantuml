@@ -1,0 +1,42 @@
+@startuml
+set separator none
+title Components Diagram
+
+left to right direction
+' top to bottom direction
+
+!include <C4/C4>
+!include <C4/C4_Context>
+!include <C4/C4_Container>
+!include <C4/C4_Component>
+
+Person(User, "User", $descr="", $tags="", $link="")
+
+Component(SoftwareSystem.WebApplication.Component1, "Event Application Interface", $techn="", $descr="Provides a user-friendly interface for visitors to interact with the system.", $tags="", $link="")
+Component(SoftwareSystem.WebApplication.Component2, "Dashboard for Event Administrators", $techn="", $descr="Offers a graphical interface for event administrators to manage and monitor the event.", $tags="", $link="")
+Component(SoftwareSystem.WebApplication.Component3, "Accessibility Interface", $techn="", $descr="Provides accessibility features for visitors with disabilities to navigate and access event information.", $tags="", $link="")
+Component(SoftwareSystem.WebApplication.Component4, "Weather Forecast Display", $techn="", $descr="Displays real-time weather forecasts to help visitors plan their activities during the event.", $tags="", $link="")
+
+Component(SoftwareSystem.WebApplication.BackendComponent1, "Venue Availability Management Service", $techn="", $descr="Provides APIs for retrieving venue availability information and suggesting alternate venues to visitors.", $tags="", $link="")
+Component(SoftwareSystem.WebApplication.BackendComponent2, "Parking Lot Availability Management Service", $techn="", $descr="Provides APIs for retrieving parking lot availability information and suggesting nearby parking options to visitors.", $tags="", $link="")
+Component(SoftwareSystem.WebApplication.BackendComponent3, "Ticketing and Booking Service", $techn="", $descr="Provides accessibility features for visitors with disabilities to navigate and access event information.", $tags="", $link="")
+Component(SoftwareSystem.WebApplication.BackendComponent4, "Recommendation Engine", $techn="", $descr="Displays real-time weather forecasts to help visitors plan their activities during the event.", $tags="", $link="")
+Component(SoftwareSystem.WebApplication.BackendComponent5, "Analytics and Reporting Service", $techn="", $descr="Displays real-time weather forecasts to help visitors plan their activities during the event.", $tags="", $link="")
+Component(SoftwareSystem.WebApplication.BackendComponent6, "Notification Service", $techn="", $descr="Displays real-time weather forecasts to help visitors plan their activities during the event.", $tags="", $link="")
+
+Rel(User, SoftwareSystem.WebApplication.Component1, "Uses", $techn="", $tags="", $link="")
+Rel(User, SoftwareSystem.WebApplication.Component2, "Uses", $techn="", $tags="", $link="")
+Rel(User, SoftwareSystem.WebApplication.Component3, "Uses", $techn="", $tags="", $link="")
+Rel(User, SoftwareSystem.WebApplication.Component4, "Uses", $techn="", $tags="", $link="")
+Rel(SoftwareSystem.WebApplication.Component1, SoftwareSystem.WebApplication.BackendComponent1, "Sends Requests to", $techn="", $tags="", $link="")
+Rel(SoftwareSystem.WebApplication.Component2, SoftwareSystem.WebApplication.BackendComponent1, "Sends Requests to", $techn="", $tags="", $link="")
+Rel(SoftwareSystem.WebApplication.Component3, SoftwareSystem.WebApplication.BackendComponent1, "Sends Requests to", $techn="", $tags="", $link="")
+Rel(SoftwareSystem.WebApplication.Component4, SoftwareSystem.WebApplication.BackendComponent1, "Sends Requests to", $techn="", $tags="", $link="")
+Rel(SoftwareSystem.WebApplication.Component4, SoftwareSystem.WebApplication.BackendComponent2, "Sends Requests to", $techn="", $tags="", $link="")
+Rel(SoftwareSystem.WebApplication.Component4, SoftwareSystem.WebApplication.BackendComponent3, "Sends Requests to", $techn="", $tags="", $link="")
+Rel(SoftwareSystem.WebApplication.Component4, SoftwareSystem.WebApplication.BackendComponent4, "Sends Requests to", $techn="", $tags="", $link="")
+Rel(SoftwareSystem.WebApplication.Component4, SoftwareSystem.WebApplication.BackendComponent5, "Sends Requests to", $techn="", $tags="", $link="")
+Rel(SoftwareSystem.WebApplication.Component4, SoftwareSystem.WebApplication.BackendComponent6, "Sends Requests to", $techn="", $tags="", $link="")
+
+SHOW_LEGEND(true)
+@enduml

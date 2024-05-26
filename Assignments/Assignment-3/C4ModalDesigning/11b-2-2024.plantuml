@@ -1,0 +1,36 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+left to right direction
+
+System_Boundary(TukRideSystem, "TukRide System") {
+    Container(UserInterface, "User Interface") {
+        Component(HandleUserRequests, "Handle User Requests")
+    }
+
+    Container(APIGateway, "API Gateway") {
+        Component(RouteRequests, "Route Requests")
+    }
+
+    Container(LocationTrackingService, "Location Tracking Service") {
+        Component(trackLocation, "Track Location")
+    }
+
+    Container(SurgePricePredictor, "Surge Price Predictor") {
+        Component(updateLocationSP, "Update Location")
+    }
+
+    Container(TripTimeEstimationCalculator, "Trip Time Estimation Calculator") {
+        Component(updateLocationTTEC, "Update Location")
+    }
+
+    Container(RideMatcher, "Ride Matcher") {
+        Component(updateLocationRM, "Update Location")
+    }
+
+    UserInterface --> APIGateway
+    APIGateway --> LocationTrackingService
+    LocationTrackingService --> SurgePricePredictor
+    LocationTrackingService --> TripTimeEstimationCalculator
+    LocationTrackingService --> RideMatcher
+}
+@enduml

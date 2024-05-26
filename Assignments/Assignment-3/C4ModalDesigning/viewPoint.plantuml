@@ -1,0 +1,23 @@
+@startuml dfdfg
+set separator none
+title Concerns
+
+top to bottom direction
+
+!include <C4/C4>
+!include <C4/C4_Context>
+
+Process(UserInteraction, "User Interaction", $descr="Interactions between users and the system viewpoints.")
+Process(DataProcessing, "Data Processing", $descr="Processing and manipulation of data within the system viewpoints.")
+Process(Analytics, "Analytics", $descr="Analyzing data to derive insights and inform decision-making.")
+Process(Communication, "Communication", $descr="Communication between different viewpoints and stakeholders.")
+Process(Management, "Management", $descr="Managing the overall system and its components.")
+
+Rel(UserInteraction, DataProcessing, "Input/Output", $techn="", $tags="", $link="")
+Rel(DataProcessing, Analytics, "Data Flow", $techn="", $tags="", $link="")
+Rel(DataProcessing, Communication, "Data Exchange", $techn="", $tags="", $link="")
+Rel(Analytics, Communication, "Reporting", $techn="", $tags="", $link="")
+Rel(Management, Communication, "Coordination", $techn="", $tags="", $link="")
+
+SHOW_LEGEND(true)
+@enduml

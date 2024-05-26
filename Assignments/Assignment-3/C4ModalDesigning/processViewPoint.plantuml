@@ -1,0 +1,20 @@
+
+
+@startuml dffgd
+set separator none
+title Process View
+
+top to bottom direction
+
+!include <C4/C4>
+!include <C4/C4_Context>
+
+System(UserInteraction, "User Interaction", $descr="Interactions between users and the system viewpoints.", $tags="", $link="")
+System(DataProcessing, "Data Processing", $descr="Processing and manipulation of data within the system viewpoints", $tags="", $link="")
+System(Analytics, "Analytics", $descr="Analyzing data to derive insights and inform decision-making.", $tags="", $link="")
+System(Communication, "Communication", $descr="Communication between different viewpoints and stakeholders.", $tags="", $link="")
+System(Management, "Management", $descr="Managing the overall system and its components.", $tags="", $link="")
+
+SHOW_LEGEND(true)
+@enduml
+
