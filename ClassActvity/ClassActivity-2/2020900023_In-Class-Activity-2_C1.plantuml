@@ -1,0 +1,41 @@
+@startuml 2020900023_In-Class-Activity-2
+class Student {
+-studentName: String
+-studentId
++register()
++dropCourse()
+}
+
+class courseManagment {
+-courseId: int
+-courseName: String
+-instructor: String
+-schedule: String
++register() 
++getCourseId(): int
++getCourseName(): String
++getInstructor(): String
++getSchedule(): String
+}
+
+class Enrollment {
+-enrollmentId: int
+-student: Student
+-course: Course
+-grade: String
+
++getEnrollmentId(): int
++getStudent(): Student
++getCourse(): Course
++getGrade(): String
+ }
+
+class CourseManager {
+courses: List<Course>
++addCourse(course: Course)
++removeCourse(course: Course)
++viewAllCourses(): List<Course>
++viewEnrolledCourses(student: Student): List<Course
+}
+
+@enduml

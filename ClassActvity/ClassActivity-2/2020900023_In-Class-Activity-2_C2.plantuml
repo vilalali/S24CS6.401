@@ -1,0 +1,78 @@
+@startuml 2020900023_In-Class-Activity-2-2
+
+abstract class User {
+  - userID: String
+  - userName: String
+  + viewProfile(): void
+}
+
+class UserActivity {
+  - activityID: String
+  - activityName: String
+  + performActivity(): void
+}
+
+class Course {
+  - courseCode: String
+  - courseName: String
+  - credits: int
+  + getDetails(): void
+}
+
+class Department {
+  - departmentID: String
+  - departmentName: String
+  + getDetails(): void
+}
+
+class Enrollment {
+  - enrollmentID: String
+  - grade: String
+  + getDetails(): void
+}
+
+class Schedule {
+  - scheduleID: String
+  - dayOfWeek: String
+  - time: String
+  + getDetails(): void
+}
+
+class Student {
+  - studentID: String
+  - studentName: String
+  - major: String
+  + viewProfile(): void
+}
+
+class TeachingAssistant {
+  - taID: String
+  - taName: String
+  - taSpecialization: String
+  + viewProfile(): void
+}
+
+class Faculty {
+  - facultyID: String
+  - facultyName: String
+  - facultySpecialization: String
+  + viewProfile(): void
+  + viewProfile(): void
+}
+
+Course "1" -- "*" Student : Enroll
+Course "1" -- "*" Schedule
+Faculty "1" -- "*" Course : Teaches
+TeachingAssistant "1" -- "*" Student : Assists
+Faculty "1" -- "*" TeachingAssistant : HasTAs
+User <|-- Student
+User <|-- TeachingAssistant
+User <|-- Faculty
+Department "1" -- "*" User
+UserActivity *-- User : Composes
+Enrollment "1" -- "1" Course : Includes
+Enrollment "1" -- "1" Student : EnrolledBy
+
+@enduml
+
+

@@ -1,0 +1,36 @@
+@startuml 2020900023_In-Class-Activity-Sequence-Diagram
+
+actor Student
+participant "Student" as StudentObj
+participant "CourseManager" as CourseManagerObj
+participant "Enrollment" as EnrollmentObj
+
+activate StudentObj
+activate CourseManagerObj
+activate EnrollmentObj
+
+Student -> CourseManagerObj: register()
+activate CourseManagerObj
+CourseManagerObj -> CourseManagerObj: viewAllCourses()
+deactivate CourseManagerObj
+CourseManagerObj -> StudentObj: List of available courses
+StudentObj -> StudentObj: Choose a course
+StudentObj -> CourseManagerObj: enrollInCourse(course)
+CourseManagerObj -> CourseManagerObj: validateEnrollment(course)
+alt Validation successful
+    CourseManagerObj -> EnrollmentObj: createEnrollment(student, course)
+    activate EnrollmentObj
+    EnrollmentObj -> EnrollmentObj: Generate enrollment ID
+    deactivate EnrollmentObj
+    CourseManagerObj -> EnrollmentObj: addEnrollment(enrollment)
+    deactivate EnrollmentObj
+    CourseManagerObj -> StudentObj: Confirmation message
+else Validation failed
+    CourseManagerObj -> StudentObj: Validation failed message
+end
+
+deactivate CourseManagerObj
+deactivate StudentObj
+deactivate EnrollmentObj
+
+@enduml
