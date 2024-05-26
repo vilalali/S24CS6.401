@@ -1,0 +1,27 @@
+@startuml Stakeholders
+set separator none
+title Audiomitra Stakeholders 
+
+'top to bottom direction
+left to right direction
+
+!include <C4/C4>
+!include <C4/C4_Context>
+
+Person(UsersStudents, "Users and Students", $descr="", $tags="", $link="")
+Person(EducationalInstitutions, "Educat Institutions", $descr="", $tags="", $link="")
+Person(PublishingHouses, "Publishing Houses", $descr="", $tags="", $link="")
+
+Person(LibrariesArchives, "Libraries and Archives", $descr="", $tags="", $link="")
+Person(AuthorsWriters, "Authors and Writers", $descr="", $tags="", $link="")
+Person(ContentCreators, "Content Creators", $descr="", $tags="", $link="")
+
+Person(OCRAPIs, "OCR APIs Provider", $descr="", $tags="", $link="")
+Person(TTSAPIs, "TTS APIs Provider", $descr="", $tags="", $link="")
+Person(Podcast, "Podcast Provider", $descr="", $tags="", $link="")
+
+footer "Audiomitra Stakeholders Diagram © 2024 by Vilal Ali & Team_11"
+
+SHOW_LEGEND(true)
+@enduml
+

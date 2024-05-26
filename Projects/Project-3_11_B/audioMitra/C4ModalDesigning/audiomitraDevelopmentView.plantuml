@@ -1,0 +1,21 @@
+@startuml DevelopmentView
+skinparam component {
+    BackgroundColor PaleGreen
+    BorderColor Black
+}
+title Development View Diagram for Audiomitra
+
+package "Development View" {
+    [ReactJS] as ReactJSComponent
+    [Tailwind CSS] as TailwindCSSComponent
+    [Python Flask] as PythonFlaskComponent
+    [MySQL] as MySQLComponent
+    [OCR and TTS APIs] as OCRandTTSAPIsComponent
+}
+
+[ReactJS] --> [Python Flask] : Communicates through RESTful APIs
+[Python Flask] --> [MySQL] : Interacts with
+[Python Flask] --> [OCR and TTS APIs] : Uses
+
+footer "Audiomitra Development View Diagram © 2024 by Vilal Ali & Team_11"
+@enduml

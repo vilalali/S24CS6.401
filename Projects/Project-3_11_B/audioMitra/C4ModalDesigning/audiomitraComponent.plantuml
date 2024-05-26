@@ -1,0 +1,40 @@
+@startuml Audiomitra
+set separator none
+title Components Diagram for Audiomitra
+
+'left to right direction
+top to bottom direction
+
+!include <C4/C4>
+!include <C4/C4_Context>
+!include <C4/C4_Container>
+!include <C4/C4_Component>
+
+Person(User, "User", $descr="Audiomitra facilitates the transition from digital images into text through Optical Character Recognition (OCR), and then converting text into audio using a text-to-speech (TTS) system. ", $tags="", $link="")
+
+Component(OCRSystem.WebInterface, "Web Interface", $techn="", $descr="Offers a user-friendly interface for interacting with the system.", $tags="", $link="")
+Component(OCRSystem.OCRProcessing, "OCR Processing", $techn="", $descr="Extracts text from scanned images or documents using OCR technology.", $tags="", $link="")
+Component(OCRSystem.TextEditingReview, "Text Editing and Review", $techn="", $descr="Provides tools for refining and validating extracted text content.", $tags="", $link="")
+Component(OCRSystem.TextToSpeech, "Text to Speech (TTS) Conversion", $techn="", $descr="Converts validated text content into audio formats using TTS technology.", $tags="", $link="")
+Component(OCRSystem.Backend.APIIntegration, "API Integration", $techn="", $descr="Integrates with open-source OCR and TTS APIs for text and audio conversion.", $tags="", $link="")
+Component(OCRSystem.UserManagement, "User Management", $techn="", $descr="Supports multiple user roles and access levels with secure authentication.", $tags="", $link="")
+
+Component(OCRSystem.AuditTrails, "Audit Trails", $techn="", $descr="Tracks changes made during text editing for accountability.", $tags="", $link="")
+Component(OCRSystem.AudioPlayer, "Audio Player", $techn="", $descr="User can play the converted audio.", $tags="", $link="")
+Component(OCRSystem.CloudInfrastructure, "Cloud Infrastructure", $techn="", $descr="Hosts the platform and microservices in the cloud for scalability.", $tags="", $link="")
+
+Rel(User, OCRSystem.WebInterface, "Uses", $techn="", $tags="", $link="")
+Rel(OCRSystem.WebInterface, OCRSystem.TextEditingReview, "Sends Requests to", $techn="", $tags="", $link="")
+Rel(OCRSystem.WebInterface, OCRSystem.TextToSpeech, "Sends Requests to", $techn="", $tags="", $link="")
+Rel(OCRSystem.WebInterface, OCRSystem.UserManagement, "Sends Requests to", $techn="", $tags="", $link="")
+Rel(OCRSystem.WebInterface, OCRSystem.OCRProcessing, "Sends Requests to", $techn="", $tags="", $link="")
+Rel(OCRSystem.WebInterface, OCRSystem.Backend.APIIntegration, "Sends Requests to", $techn="", $tags="", $link="")
+
+Rel(OCRSystem.TextEditingReview, OCRSystem.AuditTrails, "Sends Requests to", $techn="", $tags="", $link="")
+Rel(OCRSystem.TextToSpeech, OCRSystem.AudioPlayer, "User Play Audio", $techn="", $tags="", $link="")
+Rel(OCRSystem.Backend.APIIntegration, OCRSystem.CloudInfrastructure, "Sends Requests to", $techn="", $tags="", $link="")
+
+footer "Audiomitra Components Diagram © 2024 by Vilal Ali & Team_11"
+
+SHOW_LEGEND(true)
+@enduml

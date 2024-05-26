@@ -1,0 +1,30 @@
+@startuml ContextDiagram_MA
+title High-level Context Diagram: Microservices Architecture
+top to bottom direction
+'left to right direction
+
+!include <C4/C4>
+!include <C4/C4_Context>
+
+Person(Client, "Client", "Initiates document processing requests.")
+
+System(DocProcessingMicroservice, "Document Processing Microservice", "Handles OCR and TTS tasks.")
+System(OCRService, "OCR Microservice", "Performs Optical Character Recognition.")
+System(TTSService, "TTS Microservice", "Performs Text-to-Speech conversion.")
+System(ValidationService, "Validation Microservice", "Validates extracted text content.")
+System(APIGateway, "API Gateway", "Central entry point for client requests.")
+System(Database, "Database", "Stores data as needed by microservices.")
+
+Rel(Client, APIGateway, "Sends requests to")
+Rel(APIGateway, DocProcessingMicroservice, "Routes requests to")
+Rel(DocProcessingMicroservice, OCRService, "Uses")
+Rel(DocProcessingMicroservice, TTSService, "Uses")
+Rel(DocProcessingMicroservice, ValidationService, "Uses")
+Rel(OCRService, Database, "Stores data in")
+Rel(TTSService, Database, "Stores data in")
+Rel(ValidationService, Database, "Stores data in")
+
+footer "\nAudiomitra High-level Context Diagram © 2024 by Vilal Ali & Team_11"
+
+SHOW_LEGEND(true)
+@enduml

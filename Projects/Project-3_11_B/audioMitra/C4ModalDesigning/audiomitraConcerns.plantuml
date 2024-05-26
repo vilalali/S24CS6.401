@@ -1,0 +1,27 @@
+@startuml Concerns
+set separator none
+title Audiomitra Concerns
+
+'top to bottom direction
+left to right direction
+
+!include <C4/C4>
+!include <C4/C4_Context>
+
+Person(UsersStudents, "Users and Students", $descr="General Users and Students", $tags="", $link="")
+Person(EducationalInstitutions, "Educat Institutions", $descr="Educational materials in multiple formats", $tags="", $link="")
+Person(PublishingHouses, "Publishing Houses", $descr="Companies that produce text into multiple languages", $tags="", $link="")
+
+Person(LibrariesArchives, "Libraries and Archives", $descr="Convert text into Audio", $tags="", $link="")
+Person(AuthorsWriters, "Authors and Writers", $descr="Who create content in various formats", $tags="", $link="")
+Person(ContentCreators, "Content Creators", $descr="Who create content in various formats", $tags="", $link="")
+
+Person(OCRAPIs, "OCR APIs Provider", $descr="Open Source APIs Provider", $tags="", $link="")
+Person(TTSAPIs, "TTS APIs Provider", $descr="Open Source APIs Provider", $tags="", $link="")
+Person(Podcast, "Podcast Provider", $descr="Podcast organization create content in various formats", $tags="", $link="")
+
+footer "Audiomitra Concerns Diagram © 2024 by Vilal Ali & Team_11"
+
+SHOW_LEGEND(true)
+@enduml
+

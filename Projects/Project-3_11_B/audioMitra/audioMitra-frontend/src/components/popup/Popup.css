@@ -1,0 +1,54 @@
+.navbar {
+  position: relative; /* Make sure the navbar is positioned relative */
+}
+
+.popUpBackground {
+  position: fixed; /* Position relative to the nearest positioned ancestor (in this case, the navbar) */
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column; /* Adjust to column layout for vertical alignment */
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center; /* Center content horizontally */
+  width: 100%;
+  z-index: 999; /* Add z-index to make sure it appears on top */
+  
+}
+
+
+
+.modalContainerPopup {
+  width: 500px;
+  max-height: 500px; /* Set a maximum height for the container */
+  border-radius: 12px;
+  background-color: rgba(255, 204, 0, 0.9); /* Tailwind Blue-300 with 50% opacity */
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
+  overflow-y: auto; /* Add vertical scrollbar when content overflows */
+  /* Add additional styles as needed for your modal content */
+}
+.modalContainer {
+  display: inline-block;
+  text-align: center;
+  margin-top: 1px;
+}
+
+
+
+.titleCloseBtn11 button {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  width: 20px; /* Adjust the width and height to create a circular button */
+  height: 20px;
+  border-radius: 50%; /* Make the button circular */
+  transition: background-color 0.3s, transform 0.3s; /* Add transition properties */
+}
+
+.titleCloseBtn11 button:hover {
+  background-color: lightgray; /* Change to your desired hover color */
+  transform: scale(1.1); /* Add a scale effect on hover to make it slightly larger */
+}

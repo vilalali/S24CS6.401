@@ -1,0 +1,59 @@
+[
+  {
+    "id":1,
+    "date": "March 18, 2024",
+    "fullName": "Vilal Ali Zaidi",
+    "designation": "Senior Software Engineer (Full Stack)",
+    "introduction": "As a Senior Software Developer with expertise in React, Node.js and Python.",
+    "about": "",
+    "profileImage":"../../teamImages/1-vilalAli.webp",
+    "websiteLink": "https://www.linkedin.com/in/vilal-ali/",
+    "linkedinLink": "https://www.linkedin.com/in/vilal-ali/",
+    "gitHubLink": "https://github.com/vilalali",
+    "twitterLink": "",
+    "facebookLink": ""
+  },
+  {
+    "id":2,
+    "date": "March 18, 2024",
+    "fullName": "Shriom Tyagi",
+    "designation": "Senior Software Engineer (Full Stack)",
+    "introduction": "As a Senior Software Developer with expertise in React, Node.js and Python.",
+    "about": "",
+    "profileImage":"../../teamImages/1-vilalAli.webp",
+    "websiteLink": "",
+    "linkedinLink": "",
+    "gitHubLink": "",
+    "twitterLink": "",
+    "facebookLink": ""
+  },
+  {
+    "id":3,
+    "date": "March 18, 2024",
+    "fullName": "Madan NS",
+    "designation": "Senior Software Engineer (Full Stack)",
+    "introduction": "As a Senior Software Developer with expertise in React, Node.js and Python.",
+    "about": "",
+    "profileImage":"../../teamImages/1-vilalAli.webp",
+    "websiteLink": "",
+    "linkedinLink": "",
+    "gitHubLink": "",
+    "twitterLink": "",
+    "facebookLink": ""
+  },
+  {
+    "id":4,
+    "date": "March 18, 2024",
+    "fullName": "Hanuma Bhaskara",
+    "designation": "Senior Software Engineer (Full Stack)",
+    "introduction": "As a Senior Software Developer with expertise in React, Node.js and Python.",
+    "about": "",
+    "profileImage":"../../teamImages/1-vilalAli.webp",
+    "websiteLink": "",
+    "linkedinLink": "",
+    "gitHubLink": "",
+    "twitterLink": "",
+    "facebookLink": ""
+  }
+]
+

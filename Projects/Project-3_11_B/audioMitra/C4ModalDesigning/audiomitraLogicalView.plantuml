@@ -1,0 +1,17 @@
+@startuml LogicalView
+skinparam component {
+    BackgroundColor PaleGreen
+    BorderColor Black
+}
+title Logical View Diagram for Audiomitra
+
+package "Logical View: Audiomitra" {
+    [Frontend] as FrontendComponent
+    [Backend] as BackendComponent
+    [APIs] as APIsComponent
+}
+
+[Frontend] --> [Backend] : Communicates through RESTful APIs
+footer "Audiomitra Logical View Diagram © 2024 by Vilal Ali & Team_11"
+
+@enduml

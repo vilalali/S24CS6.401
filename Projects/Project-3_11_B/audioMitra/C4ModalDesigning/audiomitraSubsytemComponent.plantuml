@@ -1,0 +1,27 @@
+@startuml ContextDiagram
+title Subsystem Components for Audiomitra
+'top to bottom direction
+left to right direction
+
+skinparam component {
+    BackgroundColor LightSeaGreen
+    BorderColor Black
+}
+
+component "Frontend Subsystem \n         (Frontend)" as FrontendComponent
+component "UI/UX Subsystem \n         (UI/UX)" as UIUXComponent
+component "Backend Subsystem \n          (Backend)" as BackendComponent
+
+component "OCR Processing Subsystem\n (Image to Text Processing)" as DocumentProcessingComponent
+component "Text Validation Subsystem\n           (Text Validation)" as TextValidation
+component "TTS Processing Subsystem\n (Text to Audio Processing)" as TextToAudioComponent
+
+component "Audio Output Subsystem\n        (Audio Output)" as AudioOutputComponent
+component "Integration Subsystem\n          (Integration)" as IntegrationComponent
+component "Database Subsystem\n         (Database)" as DatabaseComponent
+
+
+footer "\n Audiomitra Subsystem Components Diagram © 2024 by Vilal Ali & Team_11"
+
+
+@enduml

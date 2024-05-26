@@ -1,0 +1,34 @@
+@startuml ContentTransformation
+top to bottom direction
+'left to right direction
+
+skinparam usecase {
+    BackgroundColor PaleGreen
+}
+
+actor User as U
+rectangle "An Innovative Content Transformation Platform" {
+    usecase "User Accesses Audiomitra Platform" as Access
+    usecase "Document undergoes OCR Processing" as OCR
+    usecase "Validate Extracted Text" as Validate
+    usecase "Convert Text to Audio" as Convert
+    usecase "Select Language and Voice Options" as Select
+    usecase "Generate Audio" as Generate
+    usecase "User can Play Audio" as PlayAudio
+}
+
+U --> Access
+Access --> OCR
+U --> OCR
+OCR --> Validate 
+U --> Validate
+Validate -->  Convert
+U --> Convert
+Convert --> Select
+U --> Select
+Select -->  Generate
+U --> Generate
+Generate --> PlayAudio
+PlayAudio --> U
+footer "Audiomitra UseCase Diagram © 2024 by Vilal Ali & Team_11"
+@enduml

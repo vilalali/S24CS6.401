@@ -1,0 +1,22 @@
+@startuml PhysicalView
+skinparam component {
+    BackgroundColor YellowGreen
+    BorderColor Black
+}
+title Physical View Diagram for Audiomitra \n
+
+package "Physical View" {
+    [Frontend Server] as FrontendServerComponent
+    [Backend Server] as BackendServerComponent
+    [MySQL Database] as MySQLDatabaseComponent
+    [Microservices] as MicroservicesComponent
+    [Cloud Infrastructure] as CloudInfrastructureComponent
+}
+
+[Frontend Server] --> [Microservices] : Frontend Deployment
+[Backend Server] --> [Microservices] : Backend Deployment
+[Microservices] --> [MySQL Database] : Database Interaction
+[Microservices] --> [Cloud Infrastructure] : Hosting
+
+footer "\nAudiomitra Physical View Diagram © 2024 by Vilal Ali & Team_11"
+@enduml

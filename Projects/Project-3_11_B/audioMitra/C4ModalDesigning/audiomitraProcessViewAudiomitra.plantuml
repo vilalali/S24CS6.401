@@ -1,0 +1,27 @@
+@startuml SequenceProcessDiagram
+skinparam participant {
+    BackgroundColor PaleGreen
+    BorderColor Black
+}
+title Process View Diagram for Audiomitra \n
+
+    participant "User" as User
+    participant "Frontend" as Frontend
+    participant "Backend" as Backend
+    participant "OCR APIs" as OCR
+    participant "Text Validation" as Validation
+    participant "TTS APIs" as TTS
+    participant "Document Conversion" as DocumentConversion
+
+    User -> Frontend: User Request
+    Frontend -> Backend: Request Forwarded
+    Backend -> OCR: Document Processing
+    OCR -> Validation: Text Validation
+    Validation -> TTS: Text Processing
+    TTS -> DocumentConversion: Audio Generation
+    DocumentConversion -> Backend: Audio Output
+    Backend --> Frontend: Response Sent
+
+footer "\nAudiomitra Process View Diagram © 2024 by Vilal Ali & Team_11"
+
+@enduml

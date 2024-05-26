@@ -1,0 +1,22 @@
+@startuml fgfgdfgddfd
+title 4+1 Architectural View Model
+
+left to right direction
+
+!include <C4/C4>
+!include <C4/C4_Context>
+!include <C4/C4_Container>
+!include <C4/C4_Component>
+
+    Component("Frontend", "ReactJS and Tailwind CSS", $descr="Frontend components using ReactJS and Tailwind CSS.")
+    Component("Backend", "Python Flask", $descr="Backend components developed with Python Flask.")
+    Component("API", "RESTful APIs", $descr="APIs that integrate different functionalities such as OCR and TTS.")
+    Component("APDI", "RESTful APIs", $descr="APIs that integrate different functionalities such as OCR and TTS.")
+    
+    Rel("Frontend", "Backend", "Communicates with", $descr="Communicates through RESTful APIs.")
+    Rel("Frontend", "APDI", "Communicates with", $descr="Communicates through RESTful APIs.")
+    Rel("APDI", "API", "Communicates with", $descr="Communicates through RESTful APIs.")
+
+
+
+@enduml

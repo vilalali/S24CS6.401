@@ -1,0 +1,26 @@
+@startuml ContextDiagram_EDA
+title High-level Context Diagram: Event-Driven Architecture
+
+!include <C4/C4>
+!include <C4/C4_Context>
+
+Person(Client, "Client", "Initiates document processing requests.")
+
+System(DocProcessingMicroservice, "Document Processing Microservice", "Handles OCR and TTS tasks.")
+System(EventBus, "Event Bus", "Centralized communication channel for events.")
+System(OCRService, "OCR Microservice", "Performs Optical Character Recognition.")
+System(TTSService, "TTS Microservice", "Performs Text-to-Speech conversion.")
+System(ValidationService, "Validation Microservice", "Validates extracted text content.")
+System(Database, "Database", "Stores data as needed.")
+
+Rel(Client, DocProcessingMicroservice, "Sends requests to")
+Rel(DocProcessingMicroservice, EventBus, "Publishes events to")
+Rel(EventBus, OCRService, "Subscribes to")
+Rel(EventBus, TTSService, "Subscribes to")
+Rel(EventBus, ValidationService, "Subscribes to")
+Rel(OCRService, Database, "Stores data in")
+Rel(TTSService, Database, "Stores data in")
+Rel(ValidationService, Database, "Stores data in")
+footer "\nAudiomitra High-level Context Diagram © 2024 by Vilal Ali & Team_11"
+SHOW_LEGEND(true)
+@enduml
