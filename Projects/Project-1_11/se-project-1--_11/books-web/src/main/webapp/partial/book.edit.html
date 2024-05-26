@@ -1,0 +1,89 @@
+<div class="row" ng-show="!book">
+  <div class="col-md-12">
+    <img src="img/loader.gif" />
+  </div>
+</div>
+
+<div class="row" ng-show="book">
+  <div class="col-md-12">
+    <h2>{{ book.title }} {{ book.subtitle }} <small>{{ book.author }}</small></h2>
+
+    <form role="form" name="bookForm" novalidate>
+
+      <div class="form-group" ng-class="{ 'has-error': !bookForm.title.$valid, 'has-success': bookForm.title.$valid }">
+        <label for="inputTitle">Title</label>
+        <input type="text" class="form-control" id="inputTitle" name="title" placeholder="Title"
+               ng-model="book.title" ng-required="true" ng-maxlength="255" />
+        <span class="help-block" ng-show="bookForm.title.$error.required">Required</span>
+        <span class="help-block" ng-show="bookForm.title.$error.maxlength">Too long</span>
+      </div>
+
+      <div class="form-group" ng-class="{ 'has-error': !bookForm.subtitle.$valid, 'has-success': bookForm.subtitle.$valid }">
+        <label for="inputSubtitle">Subtitle</label>
+        <input type="text" class="form-control" id="inputSubtitle" name="subtitle" placeholder="Subtitle"
+               ng-model="book.subtitle" ng-maxlength="255" />
+        <span class="help-block" ng-show="bookForm.subtitle.$error.maxlength">Too long</span>
+      </div>
+
+      <div class="form-group" ng-class="{ 'has-error': !bookForm.author.$valid, 'has-success': bookForm.author.$valid }">
+        <label for="inputAuthor">Author</label>
+        <input type="text" class="form-control" id="inputAuthor" name="author" placeholder="Author"
+               ng-model="book.author" ng-required="true" ng-maxlength="255" />
+        <span class="help-block" ng-show="bookForm.author.$error.required">Required</span>
+        <span class="help-block" ng-show="bookForm.author.$error.maxlength">Too long</span>
+      </div>
+
+      <div class="form-group" ng-class="{ 'has-error': !bookForm.description.$valid, 'has-success': bookForm.description.$valid }">
+        <label for="inputDescription">Description</label>
+        <textarea class="form-control" id="inputDescription" name="description" placeholder="Description"
+               ng-model="book.description" ng-maxlength="4000"></textarea>
+        <span class="help-block" ng-show="bookForm.description.$error.maxlength">Too long</span>
+      </div>
+
+      <div class="form-group" ng-class="{ 'has-error': !bookForm.isbn10.$valid, 'has-success': bookForm.isbn10.$valid }">
+        <label for="inputIsbn10">ISBN 10</label>
+        <input type="text" class="form-control" id="inputIsbn10" name="isbn10" placeholder="ISBN 10"
+               ng-model="book.isbn10" ng-minlength="10" ng-maxlength="10" ng-pattern="/^\d+$/" />
+        <span class="help-block" ng-show="bookForm.isbn10.$error.pattern">Only numbers</span>
+        <span class="help-block" ng-show="bookForm.isbn10.$error.minlength">Too short</span>
+        <span class="help-block" ng-show="bookForm.isbn10.$error.maxlength">Too long</span>
+      </div>
+
+      <div class="form-group" ng-class="{ 'has-error': !bookForm.isbn13.$valid, 'has-success': bookForm.isbn13.$valid }">
+        <label for="inputIsbn13">ISBN 13</label>
+        <input type="text" class="form-control" id="inputIsbn13" name="isbn13" placeholder="ISBN 13"
+               ng-model="book.isbn13" ng-minlength="13" ng-maxlength="13" ng-pattern="/^\d+$/" />
+        <span class="help-block" ng-show="bookForm.isbn13.$error.pattern">Only numbers</span>
+        <span class="help-block" ng-show="bookForm.isbn13.$error.minlength">Too short</span>
+        <span class="help-block" ng-show="bookForm.isbn13.$error.maxlength">Too long</span>
+      </div>
+
+      <div class="form-group" ng-class="{ 'has-error': !bookForm.pageCount.$valid, 'has-success': bookForm.pageCount.$valid }">
+        <label for="inputPageCount">Page count</label>
+        <input type="text" class="form-control" id="inputPageCount" name="pageCount" placeholder="Page count"
+               ng-model="book.page_count" ng-pattern="/^\d+$/" />
+        <span class="help-block" ng-show="bookForm.pageCount.$error.pattern">Only numbers</span>
+      </div>
+
+      <div class="form-group" ng-class="{ 'has-error': !bookForm.language.$valid, 'has-success': bookForm.language.$valid }">
+        <label for="inputLanguage">Language</label>
+        <select class="form-control" id="inputLanguage" name="language" ng-model="book.language">
+          <option value="en">English</option>
+          <option value="fr">French</option>
+          <option value="ja">Japanese</option>
+        </select>
+      </div>
+
+      <div class="form-group" ng-class="{ 'has-error': !bookForm.publishDate.$valid, 'has-success': bookForm.publishDate.$valid }">
+        <label for="inputPublishDate">Publication year</label>
+        <input type="text" class="form-control" id="inputPublishDate" name="publishDate" placeholder="Publication date"
+               ng-model="book.publish_date_year" ng-required="true" ng-minlength="4" ng-maxlength="4" />
+        <span class="help-block" ng-show="bookForm.publishDate.$error.minlength">Too short</span>
+        <span class="help-block" ng-show="bookForm.publishDate.$error.maxlength">Too long</span>
+      </div>
+
+      <button type="submit" class="btn btn-primary" ng-click="edit()"><span class="glyphicon glyphicon-pencil"></span> {{ isEdit ? 'Edit' : 'Add' }}</button>
+      <button type="submit" class="btn btn-default" ng-click="cancel()">Cancel</button>
+    </form>
+  </div>
+</div>

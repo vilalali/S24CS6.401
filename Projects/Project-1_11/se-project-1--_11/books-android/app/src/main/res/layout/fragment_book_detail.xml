@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/book_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context="com.sismics.books.fragment.BookDetailFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_margin="8dp"
+            android:id="@+id/imgCover"
+            android:scaleType="centerCrop"
+            android:background="@drawable/card_bg"
+            android:padding="4dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imgCover"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text=""
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="#999"
+                android:fontFamily="sans-serif-light"
+                android:id="@+id/author" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text=""
+                android:fontFamily="sans-serif-light"
+                android:id="@+id/title" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="8dp"
+                android:text="Publication date"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/publish_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text=""/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="ISBN 10"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/isbn10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text=""/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="ISBN 13"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/isbn13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text=""/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Number of pages"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/page_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text=""/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Language"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/language"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text=""/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

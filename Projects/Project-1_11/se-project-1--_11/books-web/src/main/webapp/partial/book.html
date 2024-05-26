@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="well well-sm">
+      <ul class="nav nav-pills">
+        <li ng-class="{ active: !$stateParams.tag }">
+          <a href="#/book/">All</a>
+        </li>
+        <li ng-class="{ active: $stateParams.tag == tag.name }" ng-repeat="tag in tags">
+          <a href="#/book/{{ tag.name }}">{{ tag.name }}</a>
+        </li>
+      </ul>
+
+      <form class="form-horizontal form-book-search" role="form">
+        <div class="form-group">
+          <label class="sr-only" for="inputSearch">Search</label>
+          <div class="col-md-12">
+            <input tyle="text" class="form-control" ng-model="search.text" id="inputSearch" placeholder="Search" />
+          </div>
+        </div>
+        <div class="checkbox">
+					<label>
+					<input type="checkbox" ng-model="search.read"> Show only read books
+					</label>
+				</div>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-md-12">
+    <div class="row book-list" infinite-load="pageBooks(true)" infinite-margin="200">
+
+      <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2 book" ng-repeat="book in books">
+        <a href="#/book/view/{{ book.id }}" class="thumbnail">
+          <div class="image">
+            <img ng-src="api/book/{{ book.id }}/cover" title="{{ book.title }}" />
+            <span title="Read book" class="glyphicon glyphicon-ok book-read" ng-if="book.read_date"></span>
+            <ul class="book-tags">
+              <li ng-repeat="tag in book.tags" ng-style="{ background: tag.color }"><span>{{ tag.name }}</span></li>
+            </ul>
+          </div>
+          <div class="caption">
+            <p class="text-primary text-center">{{ book.title }}</p>
+            <p class="text-muted text-center">{{ book.author }}</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-12 text-center" ng-show="!loading && books.length == 0">
+        No book
+      </div>
+
+      <div class="col-md-12 text-center" ng-show="loading">
+        <img src="img/loader.gif" />
+      </div>
+
+    </div>
+  </div>
+</div>

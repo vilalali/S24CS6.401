@@ -1,0 +1,10 @@
+SET IGNORECASE TRUE;
+create memory table T_APP ( APP_ID_C varchar(20) not null, primary key (APP_ID_C) );
+create cached table T_USER_APP ( USA_ID_C varchar(36) not null, USA_IDUSER_C varchar(36) not null, USA_IDAPP_C varchar(20) not null, USA_ACCESSTOKEN_C varchar(255), USA_USERNAME_C varchar(100), USA_EXTERNALID_C varchar(50), USA_EMAIL_C varchar(100), USA_SHARING_B bit not null, USA_CREATEDATE_D datetime not null, USA_DELETEDATE_D datetime, primary key (USA_ID_C) );
+create cached table T_USER_CONTACT ( USC_ID_C varchar(36) not null, USC_IDUSER_C varchar(36) not null, USC_IDAPP_C varchar(20) not null, USC_EXTERNALID_C varchar(50) not null, USC_FULLNAME_C varchar(100), USC_EMAIL_C varchar(100), USC_CREATEDATE_D datetime not null, USC_UPDATEDATE_D datetime, USC_DELETEDATE_D datetime, primary key (USC_ID_C) );
+alter table T_USER_APP add constraint FK_USA_IDUSER_C foreign key (USA_IDUSER_C) references T_USER (USE_ID_C) on delete restrict on update restrict;
+alter table T_USER_APP add constraint FK_USA_IDAPP_C foreign key (USA_IDAPP_C) references T_APP (APP_ID_C) on delete restrict on update restrict;
+alter table T_USER_CONTACT add constraint FK_USC_IDUSER_C foreign key (USC_IDUSER_C) references T_USER (USE_ID_C) on delete restrict on update restrict;
+alter table T_USER_CONTACT add constraint FK_USC_IDAPP_C foreign key (USC_IDAPP_C) references T_APP (APP_ID_C) on delete restrict on update restrict;
+insert into T_APP(APP_ID_C) values('FACEBOOK');
+update T_CONFIG set CFG_VALUE_C='1' where CFG_ID_C='DB_VERSION';

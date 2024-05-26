@@ -1,0 +1,175 @@
+// Books list
+.book-list {
+  .book {
+    margin-bottom: 12px;
+    height: 242px;
+
+    p {
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .caption {
+      padding: 6px 0 0 0;
+      font-size: 90%;
+    }
+
+    .thumbnail {
+      .image {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 128px;
+        height: 192px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+          width: 128px;
+        }
+
+        .book-read {
+          position: absolute;
+          top: 4px;
+          right: 4px;
+          color: #000000;
+          background: rgba(255,255,255,.5);
+          padding: 4px;
+          border-radius: 2px;
+        }
+        
+        .book-tags {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          color: #fff;
+          text-align: right;
+
+          li {
+            margin: 2px;
+            padding: 3px;
+            border-radius: 2px;
+            min-width: 26px;
+            min-height: 26px;
+
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .book-tags li span {
+        display: inline !important;
+      }
+    }
+  }
+}
+
+.form-book-search {
+  margin-top: 10px;
+}
+
+// Book view
+.tags-book-view {
+  margin-bottom: 10px;
+
+  .btn label {
+    margin-bottom: 0;
+    color: #ffffff;
+  }
+}
+
+.cover-book-view {
+  width: 128px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+// $http loader
+.loader {
+  position: absolute;
+  top: -2px;
+  left: 12px;
+  margin-left: 0;
+  
+  &.hide {
+    visibility: hidden;
+  }
+}
+
+.navbar-brand {
+  margin-left: 30px;
+}
+
+// Tags list
+.table-tags {
+  tbody td {
+    vertical-align: middle !important;
+    text-align: left;
+  }
+}
+
+.tag-search-form {
+  margin-top: 10px;
+}
+
+// Users list
+.table-users {
+  tbody tr {
+    cursor: pointer;
+  }
+}
+
+// Logs list
+.table-logs {
+  tbody tr td {
+    &:first-child {
+      white-space: nowrap;
+    }
+    
+    .cell-message {
+      word-wrap: break-word;
+    }
+  }
+}
+
+// Fields bound to datepicker
+input[readonly][datepicker-popup] {
+  cursor: pointer;
+}
+
+// Inline edition
+.inline-edit {
+  cursor: pointer;
+  display: block;
+  
+  span {
+    display: block;
+  }
+  
+  input {
+    display: none;
+    margin-bottom: 0;
+  }
+  
+  &.active {
+    span {
+      display: none;
+    }
+    
+    input {
+      display: inline-block;
+    }
+  }
+}
+
+.nav-text-error {
+  color: #b94a48 !important;
+}

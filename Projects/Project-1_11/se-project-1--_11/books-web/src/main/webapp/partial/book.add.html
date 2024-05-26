@@ -1,0 +1,60 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="well well-sm">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><span class="glyphicon glyphicon-barcode"></span> Add a book with a barcode</h3>
+        </div>
+        <div class="panel-body">
+          <p>
+            <button type="button" class="btn btn-primary" ng-click="openBarcodeScanner()">Open Barcode Scanner</button>
+          </p>
+          <p>
+            Only works on iOS or Android, and Barcode Scanner must be installed.
+            <ul>
+              <li><a href="https://play.google.com/store/apps/details?id=com.google.zxing.client.android" target="_blank">Google Play</a></li>
+              <li><a href="https://itunes.apple.com/en/app/barcodes-scanner/id417257150?mt=8">App Store</a></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><span class="glyphicon glyphicon-pencil"></span> Add by ISBN</h3>
+        </div>
+        <div class="panel-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="inputIsbn">ISBN (10 or 13 numbers)</label>
+              <input type="text" class="form-control" id="inputIsbn" ng-model="isbn" placeholder="ISBN" />
+            </div>
+            <button type="submit" class="btn btn-primary" ng-click="addBook()">Add</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><a href="#/book/addmanual"><span class="glyphicon glyphicon-pencil"></span> Add manually</a></h3>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><span class="glyphicon glyphicon-import"></span> Import from Goodreads</h3>
+        </div>
+        <div class="panel-body">
+          <p>From your <a href="https://www.goodreads.com/review/import" target="_blank">Goodreads import/export interface</a>, select "export to a csv file" on the right.</p>
+          <form role="form">
+            <div class="form-group">
+              <label for="inputIsbn">CSV file from Goodreads</label>
+              <file class="form-control" id="inputImportFile" ng-model="importFile" />
+            </div>
+            <button type="submit" class="btn btn-primary" ng-click="importBooks()">Import</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

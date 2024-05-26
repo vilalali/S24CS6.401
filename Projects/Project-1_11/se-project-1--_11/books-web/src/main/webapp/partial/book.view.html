@@ -1,0 +1,49 @@
+<div class="row" ng-show="!book">
+  <div class="col-md-12">
+    <img src="img/loader.gif" />
+  </div>
+</div>
+
+<div class="row" ng-show="book">
+  <div class="col-md-12">
+    <h2>{{ book.title }} {{ book.subtitle }} <small>{{ book.author }}</small></h2>
+
+    <ul class="list-inline tags-book-view">
+      <li ng-repeat="tag in tags">
+        <div class="btn btn-default" ng-style="{ 'background-color': tag.color }">
+          <label><input type="checkbox" ng-model="tag.active"> {{ tag.name }}</label>
+        </div>
+      </li>
+    </ul>
+
+    <p class="pull-left">
+      <img ng-if="book && !coverChanging" ng-src="api/book/{{ book.id }}/cover" class="cover-book-view" ng-click="editCover()" />
+      <img src="img/loader.gif" ng-if="coverChanging" />
+    </p>
+    <p class="clearfix">{{ book.description }}</p>
+
+    <dl class="dl-horizontal">
+      <dt>Read book</dt>
+      <dd><input type="checkbox" ng-model="book.read" />{{ read }}</dd>
+      <dt ng-if="book.read_date">Read date</dt>
+      <dd ng-if="book.read_date">{{ book.read_date | date: 'yyyy-MM-dd' }}</dd>
+      <dt>Publication date</dt>
+      <dd>{{ book.publish_date | date: 'yyyy' }}</dd>
+      <dt>ISBN 10</dt>
+      <dd>{{ book.isbn10 }}</dd>
+      <dt>ISBN 13</dt>
+      <dd>{{ book.isbn13 }}</dd>
+      <dt>Number of pages</dt>
+      <dd>{{ book.page_count }}</dd>
+      <dt ng-if="book.language">Language</dt>
+      <dd ng-if="book.language"><img ng-src="img/flags/{{ book.language }}.png" /></dd>
+    </dl>
+
+    <div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger" ng-click="deleteBook()"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+        <button type="button" class="btn btn-primary" ng-click="editBook()"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+      </div>
+    </div>
+  </div>
+</div>

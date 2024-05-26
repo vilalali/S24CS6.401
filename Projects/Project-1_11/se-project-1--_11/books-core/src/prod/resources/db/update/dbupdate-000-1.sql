@@ -1,0 +1,1 @@
+update T_CONFIG set CFG_VALUE_C = 'AIzaSyC8CXDtLo-3ErzRF5rXTcAnLbtGjKLgUEE' where CFG_ID_C = 'API_KEY_GOOGLE';

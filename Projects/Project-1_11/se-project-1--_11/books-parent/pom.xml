@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.sismics.books</groupId>
+  <artifactId>books-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>Books Parent</name>
+
+  <properties>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <!-- Dependencies version (external) -->
+    <commons-lang.commons-lang.version>2.6</commons-lang.commons-lang.version>
+    <commons-io.commons-io.version>2.1</commons-io.commons-io.version>
+    <com.google.guava.guava.version>14.0</com.google.guava.guava.version>
+    <log4j.log4j.version>1.2.16</log4j.log4j.version>
+    <org.slf4j.version>1.6.4</org.slf4j.version>
+    <org.slf4j.jcl-over-slf4j.version>1.6.6</org.slf4j.jcl-over-slf4j.version>
+    <junit.junit.version>4.7</junit.junit.version>
+    <org.hsqldb.hsqldb.version>2.3.0</org.hsqldb.hsqldb.version>
+    <com.sun.jersey.version>1.17</com.sun.jersey.version>
+    <org.mindrot.jbcrypt>0.3m</org.mindrot.jbcrypt>
+    <org.codehaus.jackson.jackson.version>1.7.1</org.codehaus.jackson.jackson.version>
+    <net.sf.opencsv.opencsv.version>2.0</net.sf.opencsv.opencsv.version>
+    <com.sun.grizzly.version>1.9.18-m</com.sun.grizzly.version>
+    <org.hibernate.hibernate.version>4.1.0.Final</org.hibernate.hibernate.version>
+    <commons-dbcp.version>1.4</commons-dbcp.version>
+    <joda-time.joda-time.version>2.2</joda-time.joda-time.version>
+    <com.restfb.restfb.version>1.6.12</com.restfb.restfb.version>
+    <com.neovisionaries.nv-i18n.version>1.5</com.neovisionaries.nv-i18n.version>
+
+    <org.eclipse.jetty.jetty-server.version>8.1.10.v20130312</org.eclipse.jetty.jetty-server.version>
+    <org.eclipse.jetty.jetty-webapp.version>8.1.10.v20130312</org.eclipse.jetty.jetty-webapp.version>
+    <org.eclipse.jetty.jetty-servlet.version>8.1.10.v20130312</org.eclipse.jetty.jetty-servlet.version>
+    <org.mortbay.jetty.servlet-api.version>3.0.20100224</org.mortbay.jetty.servlet-api.version>
+    
+    <!-- Plugins version -->
+    <org.apache.maven.plugins.maven-dependency-plugin.version>2.7</org.apache.maven.plugins.maven-dependency-plugin.version>
+    <org.apache.maven.plugins.maven-eclipse-plugin.version>2.8</org.apache.maven.plugins.maven-eclipse-plugin.version>
+    <org.apache.maven.plugins.maven-jar-plugin.version>2.4</org.apache.maven.plugins.maven-jar-plugin.version>
+    <org.apache.maven.plugins.maven-release-plugin.version>2.4.1</org.apache.maven.plugins.maven-release-plugin.version>
+    <org.apache.maven.plugins.maven-resources-plugin.version>2.6</org.apache.maven.plugins.maven-resources-plugin.version>
+    <org.apache.maven.plugins.maven-war-plugin.version>2.2</org.apache.maven.plugins.maven-war-plugin.version>
+    <org.codehaus.cargo.cargo-maven2-plugin.version>1.2.0</org.codehaus.cargo.cargo-maven2-plugin.version>
+    <org.mortbay.jetty.jetty-maven-plugin.version>8.1.2.v20120308</org.mortbay.jetty.jetty-maven-plugin.version>
+  </properties>
+  
+  <scm>
+    <connection>scm:git:https://github.com/sismics/books.git</connection>
+    <developerConnection>scm:git:https://github.com/books/books.git</developerConnection>
+    <url>scm:git:https://github.com/sismics/books.git</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>${org.apache.maven.plugins.maven-dependency-plugin.version}</version>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-eclipse-plugin</artifactId>
+        <version>${org.apache.maven.plugins.maven-eclipse-plugin.version}</version>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>${org.apache.maven.plugins.maven-jar-plugin.version}</version>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>${org.apache.maven.plugins.maven-release-plugin.version}</version>
+        <configuration>
+          <tagNameFormat>@{project.version}</tagNameFormat>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>${org.apache.maven.plugins.maven-resources-plugin.version}</version>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>${org.apache.maven.plugins.maven-war-plugin.version}</version>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.codehaus.cargo</groupId>
+        <artifactId>cargo-maven2-plugin</artifactId>
+        <version>${org.codehaus.cargo.cargo-maven2-plugin.version}</version>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+        <version>${org.mortbay.jetty.jetty-maven-plugin.version}</version>
+      </plugin>
+      
+    </plugins>
+  </build>
+        
+  <modules>
+    <module>../books-core</module>
+    <module>../books-web-common</module>
+    <module>../books-web</module>
+  </modules>
+  
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.sismics.books</groupId>
+        <artifactId>books-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    
+      <dependency>
+        <groupId>com.sismics.books</groupId>
+        <artifactId>books-web-common</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    
+      <dependency>
+        <groupId>com.sismics.books</groupId>
+        <artifactId>books-web-common</artifactId>
+        <type>test-jar</type>
+        <version>${project.version}</version>
+      </dependency>
+    
+      <dependency>
+        <groupId>com.sismics.books</groupId>
+        <artifactId>books-web</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    
+      <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-server</artifactId>
+        <version>${org.eclipse.jetty.jetty-server.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-webapp</artifactId>
+        <version>${org.eclipse.jetty.jetty-webapp.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-servlet</artifactId>
+        <version>${org.eclipse.jetty.jetty-servlet.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>servlet-api</artifactId>
+        <version>${org.mortbay.jetty.servlet-api.version}</version>
+      </dependency>
+            
+      <dependency>
+        <groupId>commons-lang</groupId>
+        <artifactId>commons-lang</artifactId>
+        <version>${commons-lang.commons-lang.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>${commons-io.commons-io.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>net.sf.opencsv</groupId>
+        <artifactId>opencsv</artifactId>
+        <version>${net.sf.opencsv.opencsv.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${com.google.guava.guava.version}</version>
+      </dependency>
+      
+      <dependency>
+		    <groupId>com.neovisionaries</groupId>
+		    <artifactId>nv-i18n</artifactId>
+		    <version>${com.neovisionaries.nv-i18n.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.codehaus.jackson</groupId>
+        <artifactId>jackson-core-asl</artifactId>
+        <version>${org.codehaus.jackson.jackson.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.codehaus.jackson</groupId>
+        <artifactId>jackson-mapper-asl</artifactId>
+        <version>${org.codehaus.jackson.jackson.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+        <version>${log4j.log4j.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>${org.slf4j.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${org.slf4j.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>jcl-over-slf4j</artifactId>
+        <version>${org.slf4j.jcl-over-slf4j.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit.junit.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.mindrot</groupId>
+        <artifactId>jbcrypt</artifactId>
+        <version>${org.mindrot.jbcrypt}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.sun.jersey</groupId>
+        <artifactId>jersey-server</artifactId>
+        <version>${com.sun.jersey.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.sun.jersey</groupId>
+        <artifactId>jersey-bundle</artifactId>
+        <version>${com.sun.jersey.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.sun.jersey</groupId>
+        <artifactId>jersey-json</artifactId>
+        <version>${com.sun.jersey.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.sun.jersey.contribs</groupId>
+        <artifactId>jersey-multipart</artifactId>
+        <version>${com.sun.jersey.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>com.sun.grizzly</groupId>
+        <artifactId>grizzly-servlet-webserver</artifactId>
+        <version>${com.sun.grizzly.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.sun.jersey.jersey-test-framework</groupId>
+        <artifactId>jersey-test-framework-grizzly2</artifactId>
+        <version>${com.sun.jersey.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.hsqldb</groupId>
+        <artifactId>hsqldb</artifactId>
+        <version>${org.hsqldb.hsqldb.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>${org.hibernate.hibernate.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-entitymanager</artifactId>
+        <version>${org.hibernate.hibernate.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>commons-dbcp</groupId>
+        <artifactId>commons-dbcp</artifactId>
+        <version>${commons-dbcp.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>joda-time</groupId>
+        <artifactId>joda-time</artifactId>
+        <version>${joda-time.joda-time.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>com.restfb</groupId>
+        <artifactId>restfb</artifactId>
+        <version>${com.restfb.restfb.version}</version>
+      </dependency>
+	  
+    </dependencies>
+  </dependencyManagement>
+  
+  <pluginRepositories>
+    <!-- Codehause Snapshots (NSIS) -->
+    <pluginRepository>
+      <id>Codehaus Snapshots</id>
+      <url>http://nexus.codehaus.org/snapshots/</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled> <!-- Workaround for MNG-2974 -->
+      </releases>
+    </pluginRepository>
+  </pluginRepositories>
+</project>

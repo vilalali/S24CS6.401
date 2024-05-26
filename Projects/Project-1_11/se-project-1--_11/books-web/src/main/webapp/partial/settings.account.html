@@ -1,0 +1,26 @@
+<h1>User <small>account</small></h1>
+<form role="form" name="editUserForm" novalidate>
+  <div class="form-group" ng-class="{ 'has-error': !editUserForm.password.$valid, 'has-success': editUserForm.password.$valid }">
+    <label class="control-label" for="inputPassword">Password</label>
+    <div class="controls">
+      <input name="password" class="form-control" type="password" id="inputPassword" required
+        ng-minlength="8" ng-maxlength="50" placeholder="Password" ng-model="user.password" />
+      <span class="help-block" ng-show="editUserForm.password.$error.required">Required</span>
+      <span class="help-block" ng-show="editUserForm.password.$error.minlength">Too short</span>
+      <span class="help-block" ng-show="editUserForm.password.$error.maxlength">Too long</span>
+    </div>
+  </div>
+  <div class="form-group" ng-class="{ 'has-error': !editUserForm.passwordconfirm.$valid, 'has-success': editUserForm.passwordconfirm.$valid }">
+    <label class="control-label" for="inputPasswordConfirm">Password (confirm)</label>
+    <div class="controls">
+      <input name="passwordconfirm" class="form-control" type="password" id="inputPasswordConfirm" required
+        ui-validate="'$value == user.password'" ui-validate-watch="'user.password'"
+        placeholder="Password (confirm)" ng-model="user.passwordconfirm" />
+      <span class="help-block" ng-show="editUserForm.passwordconfirm.$error.validator">Password and password confirmation must match</span>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary" ng-click="editUser()" ng-disabled="!editUserForm.$valid">
+    <span class="glyphicon glyphicon-pencil"></span> Edit
+  </button>
+</form>
+<alert ng-repeat="alert in alerts" type="alert.type" close="closeAlert($index)">{{ alert.msg }}</alert>
